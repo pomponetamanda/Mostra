@@ -1,0 +1,89 @@
+﻿﻿
+@page
+@model Mostra.Pages.CreateModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+    <h1>Adicionar novo carro</h1>
+    <form method="post">
+        <label for="marca">Marca:</label>
+        <input type="text" name="marca" required /><br />
+
+        <label for="modelo">Modelo:</label>
+        <input type="text" name="modelo" required /><br />
+
+        <label for="ano">Ano:</label>
+        <input type="number" name="ano" required /><br />
+
+        <label for="preco">Preço:</label>
+        <input type="number" name="preco" required /><br />
+
+        <label for="estoque">Estoque:</label>
+        <input type="number" name="estoque" required /><br />
+
+        <button type="submit">Adicionar</button>
+    </form>
+</body>
+<style >
+    
+    body {
+        font-family: 'Segoe UI';
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        color: #031375;
+        text-align: center;
+    }
+
+    form {
+        background-color: #ffffff;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        padding: 20px;
+        max-width: 400px;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        color: #031375;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #031375;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+
+</style>
+</html>
