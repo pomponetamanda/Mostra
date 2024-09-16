@@ -6,34 +6,37 @@
     <title>@ViewData["Title"] - Mostra</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Mostra.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="menu">
+            <h1>Império </br> Feminino</h1>
+            <nav>
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-page="/Index">Home</a>
+                    </li>
 
-            <div class="navbar">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-page="/Privacy">Comunidade</a>
+                    </li>
 
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Império Feminino</a>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-page="/">Lojas</a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Comunidade</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/">Perfil</a>
-                        </li>
-
-                    </ul>
+                </ul>
+                <div class="search-bar">
+                    <input type="text" placeholder="Insira sua busca">
+                    <button><i class="fas fa-search"></i></button>
                 </div>
-            </div>
-        </nav>
+
+                <div class="profile-image">
+                    <img src="~/imagens/mulherperfil.jpg" alt="moça" />
+                </div>
+            </nav>
+        </div>
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -42,9 +45,33 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            Império Feminino - <a asp-area="" asp-page="/Privacy">Comunidade</a> - <a asp-area="" asp-page="/">Fale Conosco</a> - <a asp-area="" asp-page="/">Lojas</a>
-        </div>
+
+            <div class="logo">
+                <img src="~/imagens/logo.png" alt="moça" />
+            </div>
+
+
+            <div className='itens'>
+                <nav className="menu-baixo">
+
+                    <ul className="menu-nav">
+
+                        <li class="footer-item">
+                            <a class="nav-link" asp-area="" asp-page="/">Quem Somos</a>
+                        </li>
+
+                        <li class="footer-item">
+                            <a class="nav-link" asp-area="" asp-page="/Privacy">Comunidade</a>
+                        </li>
+
+                        <li class="footer-item">
+                            <a class="nav-link" asp-area="" asp-page="/">Fale Conosco</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
