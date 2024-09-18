@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 
-
+/*NAVBAR*/
 
 header {
     background-color: #6B2E38;
@@ -86,6 +86,8 @@ nav {
     margin-left: 50px;
 }
 
+/*HOME*/
+
 .inicio {
     justify-content: center;
     align-items: center;
@@ -111,6 +113,7 @@ nav {
 .botao {
     color: beige;
     background-color: #6B2E38;
+    text-decoration: none;
     margin: auto;
     display: block;
     width: 200px;
@@ -170,3 +173,108 @@ nav {
 .nav nav-item{
     color: white;
 }
+
+
+
+/*COMUNIDADE*/
+
+.forum {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.forum h1 {
+    padding-top: 100px;
+    font-family: Arial;
+    color: #6B2E38;
+    text-align: center;
+    margin: auto;
+    width: 900px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #fffbfb;
+    color: #161616;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    height: 450px;
+    text-align: center;
+}
+
+.foto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.user {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.education {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.bio {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.forum button {
+    background-color: #8C3F4C;
+    color: #fffbfb;
+    padding: 18px 20px;
+    border-radius: 15px;
+    margin-top: 40px;
+    border: none;
+    text-align: center;
+}
+
+/*FALE CONOSCO*/
+
+.faleconosco {
+    padding: 50px 24px 0;
+    color: #6B2E38;
+}
+
+    .faleconosco h2 {
+        margin-bottom: 32px;
+        padding-left: 8px;
+        border-left: 4px solid #380;
+        color: #6B2E38;
+    }
+
+.faleconosco botão2 {
+    color: beige;
+    background-color: blue;
+    width: 130px;
+    height: 45px;
+    border-radius: 8px;
+    margin-bottom: 80px;
+}
+
+    .botão2 h2 {
+        background-color: #380c13;
+    }
+
+.formularios a {
+    text-decoration: none;
+}
+
+/*LOJAS*/
+
