@@ -192,6 +192,16 @@ nav {
     border-radius: 8px;
 }
 
+.rainhas {
+    padding-bottom: 50px;
+    border-bottom: 2px solid #ccc;
+}
+
+.rainhas h2 {
+    text-align: center;
+    color: #6B2E38;
+}
+
 /*COMUNIDADE*/
 
 .forum {
@@ -382,12 +392,16 @@ textarea {
             flex: 1 1 350px;
         }
 
+        .historia .container .coluna p{
+            font-size: 20px;
+        }
 
     .historia img {
         margin-left: 30px;
         width: 80%;
         display: block;
     }
+
 
 /*OBJETIVO*/
 
@@ -412,12 +426,15 @@ textarea {
             flex: 1 1 350px;
         }
 
+            .history .container .coluna p{
+                font-size: 20px;
+            }
 
-    .history img {
-        margin-left: 30px;
-        width: 90%;
-        display: block;
-    }
+            .history img {
+                margin-left: 30px;
+                width: 100%;
+                display: block;
+            }
 
 
 /* CARROSSEL*/
@@ -538,14 +555,14 @@ textarea {
 
 /*PATROCINADORES*/
 
-.container2{
+.container2 {
     text-align: center;
 }
 
 .titulo {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #380c13;
 }
 
 .patrocinadores {
@@ -727,6 +744,7 @@ input[type="radio"] {
     transform: translateX(-200%);
 }
 
+
 /*VESTUÁRIO*/ /*banner*/
 
 .carousel-inner {
@@ -754,7 +772,7 @@ input[type="radio"] {
 
 h3 {
     font-size: 24px; /* Tamanho da fonte maior */
-    color: #333; /* Cor do texto */
+    color: #380c13; /* Cor do texto */
     text-align: start; /* Centraliza o texto */
     margin-bottom: 20px; /* Espaçamento inferior */
     letter-spacing: 2px; /* Aumenta o espaçamento entre letras */
