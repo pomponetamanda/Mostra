@@ -341,6 +341,12 @@ textarea {
     font-weight: bold;
 }
 
+.loja-ajuste {
+    display: flex;
+    height: 350px;
+    height: 350px;
+}
+
 .lojas button {
     color: white;
     background-color: #6B2E38;
@@ -358,6 +364,8 @@ textarea {
     border-radius: 8px;
     margin-right: 10px;
 }
+
+
 
 /*QUEM SOMOS*/
 
@@ -786,7 +794,7 @@ h3 {
 }
 
     .categoria img {
-        width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+        width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
         height: auto;
         display: block;
         margin: 0 auto;
@@ -794,7 +802,7 @@ h3 {
 
     .categoria p {
         margin-top: 5px;
-        font-size: 14px;
+        font-size: 18px;
         color: #333;
     }
 
@@ -804,7 +812,7 @@ h3 {
     }
 
     .categoria {
-        margin-bottom: 20px;
+        margin-bottom: -52px;
     }
 }
 
