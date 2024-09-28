@@ -1,6 +1,147 @@
-﻿namespace Mostra.Pages
-{
-    public class vestuario
-    {
-    }
-}
+﻿@page
+@model IndexModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vestuario</title>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item active" data-bs-interval="10000">
+            <img src="~/imagens/bannerjeans.png" class="bannerjeans" alt="...">
+            <!--<button class="buy-now" href="/">COMPRE AGORA</button> -->
+
+        </div>
+
+        <!--
+
+                .carousel-inner {
+                width: 100%; /* Faz com que o contêiner do banner ocupe toda a largura */
+                height: 100vh; /* A altura será de 100% da altura da tela (viewport height) */
+                overflow: hidden; /* Garante que o conteúdo extra não transborde */
+            }
+
+            .carousel-item {
+                width: 100%; /* A largura do item também será 100% da tela */
+                height: 100%; /* A altura do item também será 100% da altura da tela */
+            }
+
+            .bannerjeans {
+                width: 100%; /* A imagem ocupará toda a largura do contêiner */
+                height: 100%; /* A imagem também se ajustará à altura */
+                object-fit: cover; /* Faz com que a imagem preencha o contêiner sem distorção */
+                display: flex;
+            }
+
+        -->
+    </div>
+    <br />
+    <br />
+    <h3>Navegue pelas categorias</h3>
+
+    <div class="container-categorias">
+        <form class="cat">
+            <div class="categoria">
+                <a href="/Privacy">
+                    <img src="~/imagens/womanc.png" class="womanc" alt="...">
+                </a>
+                <p>Feminino</p>
+            </div>
+
+            <div class="categoria">
+                <a href="/">
+                    <img src="~/imagens/malec.png" class="womanc" alt="...">
+                </a>
+                <p>Masculino</p>
+            </div>
+
+            <div class="categoria">
+                <a href="/">
+                    <img src="~/imagens/babyc.png" class="womanc" alt="...">
+                </a>
+                <p>Infantil</p>
+            </div>
+
+            <div class="categoria">
+                <a href="/">
+                    <img src="~/imagens/beachc.png" class="womanc" alt="...">
+                </a>
+                <p>Moda praia</p>
+            </div>
+
+            <div class="categoria">
+                <a href="/">
+                    <img src="~/imagens/sportsc.png" class="womanc" alt="...">
+                </a>
+                <p>Esportivo</p>
+            </div>
+        </form>
+    </div>
+    <br />
+    <br />
+    <div class="container2">
+        <h3 class="titulo">Novas lojas</h3>
+        <div class="patrocinadores">
+
+
+            <div class="patrocinador">
+                <img src="~/imagens/1.png" alt="Patrocinador 1">
+                <p>Pretas no Topo</p>
+            </div>
+
+
+            <div class="patrocinador">
+                <img src="~/imagens/3.png" alt="Patrocinador 2">
+                <p>Banco Conquista</p>
+            </div>
+
+
+            <div class="patrocinador">
+                <img src="~/imagens/2.png" alt="Patrocinador 3">
+                <p>Renova</p>
+            </div>
+
+
+            <div class="patrocinador">
+                <img src="~/imagens/4.png" alt="Patrocinador 4">
+                <p>RataBank</p>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <h3>Em alta</h3>
+    <section class="marketplace-section">
+        <div class="item">
+            <img src="~/imagens/tricovest.jfif" alt="Produto 1">
+            <img src="~/imagens/maheart.png" alt="heart" class="heart-icon">
+            <p class="tituloItem">Top sem alças feminino Tricô</p>
+            <h3>R$ 70,00</h3>
+        </div>
+
+        <div class="item">
+            <img src="~/imagens/topverao.jfif" alt="Produto 2">
+            <img src="~/imagens/maheart.png" alt="heart" class="heart-icon">
+            <p class="tituloItem">Top de verão verde com ombros de fora</p>
+            <h3>R$ 85,00</h3>
+        </div>
+
+        <div class="item">
+            <img src="~/imagens/camivest.jfif" alt="Produto 3">
+            <img src="~/imagens/maheart.png" alt="heart" class="heart-icon">
+            <p class="tituloItem">Vestido de Cami Tubo</p>
+            <h3>R$ 200,00</h3>
+        </div>
+
+
+    </section>
+
+
+
+</body>
+</html>

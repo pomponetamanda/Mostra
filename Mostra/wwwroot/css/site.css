@@ -726,3 +726,146 @@ input[type="radio"] {
 #slide3:checked ~ .slides {
     transform: translateX(-200%);
 }
+
+/*VESTUÁRIO*/ /*banner*/
+
+.carousel-inner {
+    width: 100%; /* Faz com que o contêiner do banner ocupe toda a largura */
+
+    overflow: hidden; /* Garante que o conteúdo extra não transborde */
+}
+
+/*botao do compre */
+.buy-now {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+/*container categoria*/
+
+h3 {
+    font-size: 24px; /* Tamanho da fonte maior */
+    color: #333; /* Cor do texto */
+    text-align: start; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    letter-spacing: 2px; /* Aumenta o espaçamento entre letras */
+    font-weight: bold; /* Deixa o texto em negrito */
+    border-bottom: 2px solid #ccc; /* Linha abaixo do título */
+    padding-bottom: 10px; /* Espaço entre o texto e a linha */
+}
+
+.container-categorias {
+    display: flex;
+    justify-content: space-around; /* Distribui os itens uniformemente */
+    align-items: center;
+    flex-wrap: wrap; /* Para que eles se ajustem em múltiplas linhas, se necessário */
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 2px solid #ccc; /* Borda básica ao redor do container */
+    border-radius: 8px;
+}
+
+.cat {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; /* Ocupa toda a largura da página */
+}
+
+.categoria {
+    text-align: center;
+    margin: 10px;
+}
+
+    .categoria img {
+        width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .categoria p {
+        margin-top: 5px;
+        font-size: 14px;
+        color: #333;
+    }
+
+@media (max-width: 768px) {
+    .cat {
+        flex-direction: column;
+    }
+
+    .categoria {
+        margin-bottom: 20px;
+    }
+}
+
+/*seção de itens: EM ALTA*/
+
+.marketplace-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f9f9f9;
+    gap: 20px;
+    /ESPAÇO ENTRE AS IMAGENS/
+}
+
+.item {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+    .item:hover {
+        transform: scale(1.05);
+    }
+
+    .item img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .item h2 {
+        font-size: 1.5em;
+        margin: 10px 0;
+        color: #333;
+    }
+
+    .item p {
+        font-size: 1.2em;
+        color: #666;
+    }
+
+.heart-icon {
+    position: absolute;
+    bottom: 10px; /* Ajuste conforme necessário */
+    right: 10px; /* Ajuste conforme necessário */
+    width: 40px; /* Ajuste conforme necessário */
+    height: 40px; /* Ajuste conforme necessário */
+}
+
+.tituloItem {
+    font-family: Arial, sans-serif; /* Fonte básica */
+    font-size: 1.5em; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    margin: 10px 0; /* Espaçamento acima e abaixo do título */
+    text-align: center; /* Centraliza o texto */
+    font-weight: normal; /* Define o peso da fonte como normal */
+}
