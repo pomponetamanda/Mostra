@@ -1,0 +1,70 @@
+﻿﻿
+@page
+@model IndexModel
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container-8">
+        <div class="product-details">
+            <div class="image-container">
+                <img src="~/imagens/topverao.jfif" alt="Imagem do Produto" class="product-image">
+            </div>
+            <div class="details">
+                <h1> Top de Verão Verde com ombros de fora, amassado e em malha.</h1>
+                <p class="price">R$ 85,00</p>
+                <p class="description">Top de verão .</p>
+
+                <div class="form-group-8">
+                    <label>Escolha a cor:</label>
+                    <div class="color-options">
+                        <label class="color-option">
+                            <input type="radio" name="cor" value="vermelho" checked>
+                            <img src="https://via.placeholder.com/50/FF0000/FFFFFF?text=" alt="Vermelho">
+                        </label>
+                        <label class="color-option">
+                            <input type="radio" name="cor" value="azul">
+                            <img src="https://via.placeholder.com/50/0000FF/FFFFFF?text=" alt="Azul">
+                        </label>
+                        <label class="color-option">
+                            <input type="radio" name="cor" value="verde">
+                            <img src="https://via.placeholder.com/50/008000/FFFFFF?text=" alt="Verde">
+                        </label>
+                        <label class="color-option">
+                            <input type="radio" name="cor" value="preto">
+                            <img src="https://via.placeholder.com/50/000000/FFFFFF?text=" alt="Preto">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group-tam">
+                    <label for="tamanho">Escolha o tamanho:</label>
+                    <select id="tamanho" name="tamanho">
+                        <option value="p">P</option>
+                        <option value="m">M</option>
+                        <option value="g">G</option>
+                        <option value="gg">GG</option>
+                    </select>
+                </div>
+
+                <div class="form-group-qntde">
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+                </div>
+
+                <div class="button-group-carrinho">
+                    <button type="submit" class="btn add-to-cart">Adicionar ao Carrinho</button>
+                    <button type="button" class="btn buy-now">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

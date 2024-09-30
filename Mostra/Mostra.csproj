@@ -18,6 +18,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Pages\Produto.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="wwwroot\imagens\babyc.png" />
     <Content Remove="wwwroot\imagens\Banner para Site Moda Feminina Jeans Loja Online Moderno .png" />
     <Content Remove="wwwroot\imagens\bannerjeans.png" />
