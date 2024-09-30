@@ -1,0 +1,130 @@
+﻿﻿
+@page
+@model IndexModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Império Feminino</title>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+    <div class="container4">
+      <h2>CADASTRE-SE E CONSTRUA SEU SONHO:</h2>
+      <br>
+      <br>
+       <form action="cadastro" method="post">
+
+
+        <div class="form-group">
+        <label for="Nome do proprietário">Nome do proprietário:</label>
+            <input type="text" name="Nome do proprietário " placeholder="Nome do proprietário" required>
+        </div>
+
+
+            <div class="form-group">
+            <label for="Nome da empresa">Nome da empresa: </label>
+            <input type="text" name="Nome da empresa" placeholder="Nome da empresa" required>
+            </div>
+
+
+            <div class="form-group">
+            <label for="Endereço">Endereço: </label>
+            <input type="text" name="Endereço" placeholder="Endereço" required>
+            </div>
+
+
+            <div class="form-group">
+              <label for="Tipo de empresa">Tipo de empresa:</label>
+              <select id= "tipo de empresa" name="Tipo de empresa" required>
+                <option value="">Selecione</option>
+                <option value="MEI">MEI (Microempreendedor Individual)</option>
+                <option value="EIRELI">EIRELI (Empresa Individual de Responsabilidade Limitada)</option>
+                <option value="LTDA">LTDA (Sociedade Limitada)</option>
+                <option value="SA">SA (Sociedade Anônima)</option>
+              </select> 
+          </div>
+
+
+            <div class="form-group">
+            <label for="CNPJ">CNPJ: </label>
+            <input type="number" name="CNPJ" placeholder="CNPJ" required minlength="14" maxlength="14">
+            </div>
+
+
+            <div class="form-group">
+            <label for="E-mail">E-mail:</label>
+            <input type="email" name="E-mail" placeholder="E-mail" required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone" />
+            </div>
+
+            <script>
+                $(document).ready(function(){
+                $('#telefone').mask('(00) 00000-0000');
+                });
+            </script> 
+            
+            <div class="form-group">
+                <label for="horário_de_abertura"> Horário de abertura: </label>
+                <input type="time" name="horário_de_abertura"  placeholder="Horário de abertura" required>
+                </div>
+
+
+                <div class="form-group">
+                <label for="horas_de_encerramento"> Horário de fechamento: </label>
+                <input type="time"  name="horas_de_encerramento" placeholder="Horário de fechamento" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Senha">Senha: </label>
+                <input type="password" name="Senha" placeholder="Senha" required>
+                </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <ul class="button-group">
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox" required>
+                    <label class="form-check-label" for="firstCheckbox">Para continuar, aceite os termos da nossa <a href="/file:///C:/Users/021.898677/Downloads/Termos%20e%20Condi%C3%A7%C3%B5es%20de%20Uso%20do%20Imp%C3%A9rio%20Feminino.pdf">Política de Privacidade</a> </label>
+                </li>
+              </ul>
+            <div class="form-group button">
+              <a class="botao" href="">
+                <button>Entrar com google</button>
+             </a> 
+            </div>
+          <div class="form-group">
+            <a class="botao" href="#">
+              <button>Entrar</button>
+           </a> 
+        <br>
+        <br>
+        </form>
+        </div>
+   
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

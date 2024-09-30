@@ -1,6 +1,38 @@
-﻿namespace Mostra.Pages
-{
-    public class EscolhaCadastro
-    {
-    }
-}
+﻿﻿
+@page
+@model IndexModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Império Feminino</title>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+
+    <div class="container3">
+        <h1>DESEJA CADASTRA-SE COMO:</h1>
+        </br></br>
+
+        <div class="cards-container">
+
+            <div class="cards">
+                <img src="~/imagens/empresa.png" alt="Foto do Usuário 1" class="foto">
+                <a class="botao3" href="/CadastroEmpresa">
+                    <div class="botao-empresa"> Empresa</div>
+                </a>
+            </div>
+
+            <div class="cards">
+                <img src="~/imagens/cliente.jpg" alt="Foto do Usuário 2" class="foto">
+                <a class="botao3" href="/CadastroCliente">
+                    <div class="botao-cliente"> Cliente</div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html> 

@@ -1,0 +1,6 @@
+﻿namespace Mostra.Pages
+{
+    public class EditarPerfil
+    {
+    }
+}
