@@ -1037,6 +1037,8 @@ h3 {
 }
 .list-group-item {
     display: inline-flex;
+    background-color: transparent;
+    border:none;
 }
 
 
