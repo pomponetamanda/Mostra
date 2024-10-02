@@ -11,72 +11,96 @@
 <body>
 
     <main class="container9">
+
         <section class="container-acima">
-            
-                <div class="perfil">
-                    <img class="imagem" src="avatar1.jpg">
-                    <div class="texto">
-                        <h2>Olá, Coco & Lola!</h2>
-                    </div>
-                    <a href="EditarPerfilEmpresa" class="editar">Editar Perfil</a>
+            <div class="perfil">
+                <img class="imagem" src="~/imagens/amani.jpg">
+                <div class="ola">
+                    <h2>Olá, Boutique Amani</h2>
                 </div>
-        </section>
-        <section class="container-baixo">
-            <h3 class="titulo">Gerenciamento</h3>
-            <div class="icons">
-                <span>📞</span>
-                <span>📦</span>
-                <span>📤</span>
-                <span>🔄</span>
+                <a href="/EditarPerfilEmpresa" class="editar">Editar Perfil</a>
             </div>
+        </section>
+
+        <section class="container-baixo">
+            <h4 class="titulo">Gestão de Estoque</h4>
+           
             <table>
                 <thead>
                     <tr>
-                        <th>ID Produto</th>
-                        <th>Código</th>
-                        <th>Modo</th>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                        <th>Ação</th>
                     </tr>
                 </thead>
+
                 <tbody>
                     <tr>
-                        <td>585</td>
-                        <td>585864</td>
-                        <td>Enviado</td>
+                        <td>Produto A</td>
+                        <td>50</td>
+                        <td>R$ 20,00</td>
+                        <td><button>Editar</button></td>
                     </tr>
+
                     <tr>
-                        <td>698</td>
-                        <td>321486</td>
-                        <td>Entregue</td>
-                    </tr>   
+                        <td>Produto B</td>
+                        <td>30</td>
+                        <td>R$ 15,00</td>
+                        <td><button>Editar</button></td>
+                    </tr>  
+                    
                     <tr>
-                        <td>126</td>
-                        <td>945861</td>
-                        <td>Enviado</td>
+                        <td>Produto C</td>
+                        <td>30</td>
+                        <td>R$ 15,00</td>
+                        <td><button>Editar</button></td>
                     </tr>
                 </tbody>
             </table>
+            <button>Adicionar Produto</button>
         </section>
-        <section class="container-b">
-            <h3 class="titulo">Seguindo</h3>
-            <div class="seguindo-items">
-                <div class="galeria">
-                    <div class="imagem-container">
-                        <img src="https://via.placeholder.com/150" alt="Imagem 1">
-                        <div class="textogaleria">1</div>
-                    </div>
-                    <div class="imagem-container">
-                        <img src="https://via.placeholder.com/150" alt="Imagem 2">
-                        <div class="textogaleira">2</div>
-                    </div>
-                    <div class="imagem-container">
-                        <img src="https://via.placeholder.com/150" alt="Imagem 3">
-                        <div class="textogaleria">3</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
 
+
+        <section class="container-baixo">
+            <h4 class="titulo">Visualização de Pedidos</h4>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID do Pedido</th>
+                        <th>Cliente</th>
+                        <th>Status</th>
+                        <th>Valor Total</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>Cliente A</td>
+                        <td>Enviado</td>
+                        <td>R$ 100,00</td>
+                    </tr>
+
+                    <tr>
+                        <td>#002</td>
+                        <td>Cliente B</td>
+                        <td>Pendente</td>
+                        <td>R$ 50,00</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </section>
+
+        <section class="container-baixo">
+            <h4>Relatórios</h4>
+            <p>Relatórios de vendas, estoque e desempenho da loja serão exibidos aqui.</p>
+            <button>Gerar Relatório</button>
+        </section>
+
+    </main>
 </body>
 
 </html> 
