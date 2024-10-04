@@ -1,0 +1,46 @@
+﻿.faleconosco {
+    padding: 50px 24px 0;
+    color: #000000;
+}
+
+    .faleconosco h2 {
+        margin-bottom: 32px;
+        padding-left: 8px;
+        border-left: 4px solid #6B2E38;
+        color: #0f0f0f;
+    }
+
+.botao2 {
+    color: beige;
+    background-color: #6B2E38;
+    text-decoration: none;
+    margin-top: 50px;
+    display: block;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    margin-bottom: 80px;
+}
+
+    .botao2:hover {
+        background-color: #380c13;
+    }
+
+.formularios a {
+    text-decoration: none;
+}
+
+.container-faleconosco {
+    width: 70%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+textarea {
+    width: 100%;
+    border: solid 1px #c0c0c0;
+}

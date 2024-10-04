@@ -1,0 +1,282 @@
+﻿.inicio {
+    justify-content: center;
+    align-items: center;
+}
+
+    .inicio h2 {
+        padding-top: 100px;
+        font-family: Arial;
+        color: #6B2E38;
+        text-align: center;
+        margin: auto;
+        width: 900px;
+    }
+
+    .inicio img {
+        width: 400px;
+        margin: auto;
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+
+.botao {
+    color: beige;
+    background-color: #6B2E38;
+    text-decoration: none;
+    margin: auto;
+    display: block;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    margin-bottom: 80px;
+}
+
+    .botao:hover {
+        background-color: #380c13;
+    }
+
+.inicio a {
+    text-decoration: none;
+}
+
+.botaoH {
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: auto;
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    left: 20px;
+}
+
+.rainhas {
+    padding-bottom: 50px;
+    border-bottom: 2px solid #ccc;
+}
+
+    .rainhas h2 {
+        text-align: center;
+        color: #6B2E38;
+    }
+
+/*QUEM SOMOS*/
+
+.historia {
+    margin: 64px 0 0;
+    padding: 50px 24px 0;
+    color: #6B2E38;
+    margin-bottom: 80px;
+    text-align: justify;
+    border-bottom: 2px solid #ccc;
+}
+
+    .historia .container1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+        .historia .container1 .coluna {
+            flex: 1 1 350px;
+        }
+
+            .historia .container1 .coluna p {
+                font-size: 20px;
+            }
+
+    .historia img {
+        margin-left: 30px;
+        width: 80%;
+        display: block;
+    }
+
+
+/*OBJETIVO*/
+
+.objetivo {
+    margin: 64px 0 0;
+    padding: 50px 24px 0;
+    color: #6B2E38;
+    margin-bottom: 80px;
+    text-align: justify;
+    border-bottom: 2px solid #ccc;
+}
+
+.history .container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+    .history .container1 .coluna {
+        flex: 1 1 350px;
+    }
+
+        .history .container1 .coluna p {
+            font-size: 20px;
+        }
+
+.history img {
+    margin-left: 30px;
+    width: 100%;
+    display: block;
+}
+
+
+/* CARROSSEL*/
+
+.carrossel h2 {
+    color: #6B2E38;
+    text-align: center;
+    padding: 20px;
+}
+
+#carouselExampleDark {
+    border-bottom: 2px solid #380c13;
+    padding-bottom: 10px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 300px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+
+#carouselExampleDark {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #333;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicators .active {
+    background-color: #555;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Ajuste do botão de controle no hover */
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilização para deixar o slide fluido */
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Para melhorar o design em telas menores */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 300px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+
+
+/*PATROCINADORES*/
+
+.container2 {
+    text-align: center;
+}
+
+.titulo {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #380c13;
+}
+
+.patrocinadores {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.patrocinador {
+    text-align: center;
+}
+
+    .patrocinador img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .patrocinador p {
+        margin-top: 10px;
+        color: #666;
+        font-size: 1rem;
+    }

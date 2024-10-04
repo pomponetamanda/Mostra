@@ -1,0 +1,82 @@
+﻿.container8 {
+    display: flex;
+    border-radius: 3px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #161616;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.profile-info {
+    padding: 20px;
+    border-right: 1px solid #e0e0e0;
+    text-align: center;
+    width: 300px;
+}
+
+    .profile-info img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-info h2 {
+        margin: 10px 0;
+    }
+
+    .profile-info p {
+        color: #888;
+        font-size: 14px;
+    }
+
+.edit-profile {
+    padding: 20px;
+    flex: 1;
+}
+
+    .edit-profile h3 {
+        margin-bottom: 20px;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .form-group input {
+        width: 95%;
+        padding: 10px;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+    }
+
+.social-profile {
+    margin-top: 20px;
+}
+
+    .social-profile a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #007bff;
+    }
+
+.update-button {
+    background-color: #6B2E38;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+    .update-button:hover {
+        background-color: #6d3b44;
+    }

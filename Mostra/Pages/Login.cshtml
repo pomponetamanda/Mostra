@@ -1,0 +1,37 @@
+﻿@page
+@model IndexModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Império Feminino</title>
+    <link rel="stylesheet" href="/css/login.css" />
+</head>
+<body>
+    <div class="login-container">
+        <div class="left-side">
+            <img src="~/imagens/moçaflor.jfif" alt="Imagem ilustrativa">
+            <h1>Bem-vindo ao Império Feminino</h1>
+            <p>Empodere seus negócios, conquiste sua independência financeira.</p>
+        </div>
+        <div class="right-side">
+            <h2>Login</h2>
+            <form action="/login" method="POST">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+            <div class="links">
+                <a href="#">Entrar com Google</a>
+                <a href="#">Criar conta</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

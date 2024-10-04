@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -30,21 +31,24 @@
 
 
                 </ul>
-                <!-- 
+
                 <div class="search-bar">
                     <input type="text" placeholder="Insira sua busca">
                     <button><i class="fas fa-search"></i></button>
                 </div>
-                -->
-                <a href="/EscolhaCadastro">
+
+                <a href="/">
                     <button class="botaoH" type="button">Login</button>
                 </a>
                 
+                <!--
                 <a href="/PerfilEmpresa">
-                <div class="profile-image">
-                    <img src="~/imagens/mulherperfil.jpg" alt="moça" />
-                </div>
-                </a>
+                                    <div class="profile-image">
+                                        <img src="~/imagens/amani.jpg" alt="moça" />
+                                    </div>
+                                </a>
+                -->
+                
 
             </nav>
         </div>
@@ -52,7 +56,7 @@
 
     <div class="container">
         <main role="main" class="pb-3">
-            @RenderBody()
+@RenderBody()
         </main>
     </div>
 
@@ -90,6 +94,5 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
-    @await RenderSectionAsync("Scripts", required: false)
+@await RenderSectionAsync("Scripts", required: false)
 </body>
-

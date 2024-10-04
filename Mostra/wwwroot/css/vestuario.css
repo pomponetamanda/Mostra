@@ -1,0 +1,150 @@
+﻿/*banner*/
+h3 {
+    font-size: 24px; /* Tamanho da fonte maior */
+    color: #333; /* Cor do texto */
+    text-align: start; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    letter-spacing: 2px; /* Aumenta o espaçamento entre letras */
+    font-weight: bold; /* Deixa o texto em negrito */
+    padding-bottom: 10px; /* Espaço entre o texto e a linha */
+}
+
+.container-categorias {
+    display: flex;
+    justify-content: space-around; /* Distribui os itens uniformemente */
+    align-items: center;
+    flex-wrap: wrap; /* Para que eles se ajustem em múltiplas linhas, se necessário */
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 2px solid #ccc; /* Borda básica ao redor do container */
+    border-radius: 8px;
+}
+
+.cat {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; /* Ocupa toda a largura da página */
+}
+
+.categoria {
+    text-align: center;
+    margin: 10px;
+}
+
+    .categoria img {
+        width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .categoria p {
+        margin-top: 5px;
+        font-size: 18px;
+        color: #333;
+    }
+
+@media (max-width: 768px) {
+    .cat {
+        flex-direction: column;
+    }
+
+    .categoria {
+        margin-bottom: -52px;
+    }
+}
+
+.marketplace-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f9f9f9;
+    gap: 40px;
+}
+
+.item {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+    .item:hover {
+        transform: scale(1.05);
+    }
+
+    .item img {
+        max-width: 350px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .item h2 {
+        font-size: 1.5em;
+        margin: 10px 0;
+        color: #333;
+    }
+
+    .item p {
+        font-size: 1.2em;
+        color: #666;
+    }
+
+.heart-icon {
+    position: absolute;
+    bottom: 10px; /* Ajuste conforme necessário */
+    right: 10px; /* Ajuste conforme necessário */
+    width: 40px; /* Ajuste conforme necessário */
+    height: 40px; /* Ajuste conforme necessário */
+}
+
+.tituloItem {
+    font-family: Arial, sans-serif; /* Fonte básica */
+    font-size: 1.5em; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    margin: 10px 0; /* Espaçamento acima e abaixo do título */
+    text-align: center; /* Centraliza o texto */
+    font-weight: normal; /* Define o peso da fonte como normal */
+}
+
+/*LOJAS NOVAS*/
+
+.container {
+    text-align: center;
+}
+
+.titulo {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #380c13;
+}
+
+.patrocinadores {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.patrocinador {
+    text-align: center;
+}
+
+    .patrocinador img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .patrocinador p {
+        margin-top: 10px;
+        color: #666;
+        font-size: 1rem;
+    }

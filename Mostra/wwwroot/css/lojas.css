@@ -1,0 +1,33 @@
+﻿.gallery {
+    max-width: 1200px;
+    margin: 64px auto 0;
+    padding: 0 24px;
+    margin-bottom: 20px;
+}
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+    .gallery-row div {
+        width: 350px;
+    }
+
+    .gallery-row img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 16px;
+    }
+
+.gallery p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.loja-ajuste {
+    display: flex;
+    height: 350px;
+    height: 350px;
+}

@@ -1,0 +1,154 @@
+﻿.container7 {
+    color: #161616;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container-acima {
+    background-color: #ffffff;
+    border-radius: 3px;
+    gap: 20px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+.imagem {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.ola {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.editar {
+    font-size: 0.9em;
+    color: #888;
+    text-decoration: none;
+}
+
+    .editar:hover {
+        text-decoration: underline;
+    }
+
+.container-baixo {
+    background-color: #ffffff;
+    border-radius: 3px;
+    margin-top: 7px;
+    padding: 10px;
+}
+
+.titulo {
+    padding: 10px;
+    margin-right: 750px;
+}
+
+table {
+    width: 100%;
+    table-layout: auto;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 30px;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+    .status div {
+        text-align: center;
+        flex: 1;
+    }
+
+        .status div h4 {
+            margin: 0;
+            font-size: 15px;
+            color: #555;
+        }
+
+.hr {
+    border: 1px solid #6B2E38;
+    margin: 10px 0;
+}
+
+.pedido-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .pedido-info div {
+        flex: 1;
+    }
+
+    .pedido-info img {
+        width: 50px;
+        height: auto;
+        border-radius: 2px;
+    }
+
+.detalhes {
+    color: #007bff;
+    text-decoration: none;
+}
+
+    .detalhes:hover {
+        text-decoration: underline;
+    }
+
+.container-b {
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-top: 7px;
+    padding: 15px;
+}
+
+.galerias {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+img {
+    width: 150px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    border-radius: 3px;
+}
+
+.textogaleria {
+    margin-top: 1px;
+    font-size: 16px;
+    color: #333;
+}
+
+button {
+    background-color: #6B2E38;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+    button:hover {
+        background-color: #380c13;
+    }

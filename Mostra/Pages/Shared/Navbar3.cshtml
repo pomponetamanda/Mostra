@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Mostra</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+    <link href="~/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <div class="menu">
+            <h1>Império </br> Feminino</h1>
+            <nav>
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-page="/Index">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-page="/Privacy">Comunidade</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-page="/Lojas">Lojas</a>
+                    </li>
+
+
+                </ul>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Insira sua busca">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+
+                <a href="/PerfilCliente">
+                    <div class="profile-image">
+                        <img src="~/imagens/mulherperfil.jpg" alt="moça" />
+                    </div>
+                </a>
+
+            </nav>
+
+        </div>
+    </header>
+</body>
+</html>
