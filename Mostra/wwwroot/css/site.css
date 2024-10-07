@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f3e6;
     margin: 0;
     padding: 0;
 }
@@ -19,7 +19,7 @@ body {
 /*NAVBAR*/
 
 header {
-    background-color: #6B2E38;
+    background-color: #5d0703;
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
@@ -110,7 +110,7 @@ nav {
 /*FOOTER*/
 .footer {
     position: relative;
-    background-color: #6B2E38;
+    background-color: #5d0703;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,4 +1,11 @@
-﻿/*banner*/
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f3e6;
+    margin: 0;
+    padding: 0;
+}
+
+/*banner*/
 h3 {
     font-size: 24px; /* Tamanho da fonte maior */
     color: #333; /* Cor do texto */
@@ -148,3 +155,11 @@ h3 {
         color: #666;
         font-size: 1rem;
     }
+
+
+.banner {
+    width: 100%; /* Faz com que o contêiner do banner ocupe toda a largura */
+    height: 100vh; /* A altura será de 100% da altura da tela (viewport height) */
+    overflow: hidden; /* Garante que o conteúdo extra não transborde */
+    display: flex;
+}
