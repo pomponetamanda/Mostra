@@ -6,60 +6,183 @@
     <meta charset="UTF-8">
     <title>Calçados</title>
     <link rel="stylesheet" href="/css/produtos.css" />
+
+    <style>
+        /* CSS para a Avaliação (Estrelas) */
+
+        .rating-section {
+            margin-top: 20px;
+        }
+
+            .rating-section h3 {
+                font-size: 1.2em;
+                margin-bottom: 10px;
+            }
+
+        .stars {
+            direction: rtl; /* Altera para esquerda-direita para exibir corretamente */
+            display: flex; /* Flexbox para manter as estrelas na horizontal */
+        }
+
+            .stars input[type="radio"] {
+                display: none; /* Esconde os botões de rádio */
+            }
+
+            .stars label {
+                font-size: 30px;
+                color: #ccc;
+                cursor: pointer;
+                padding: 0 5px; /* Adiciona um pouco de espaço entre as estrelas */
+                display: inline-block; /* Garante que o label esteja na mesma linha */
+            }
+
+                .stars label:hover,
+                .stars label:hover ~ label,
+                .stars input[type="radio"]:checked ~ label {
+                    color: #f39c12; /* Cor das estrelas selecionadas */
+                }
+
+
+        /* CSS para a Seção de Comentários */
+        .comments-section {
+            margin-top: 30px;
+        }
+
+            .comments-section h3 {
+                font-size: 1.2em;
+                margin-bottom: 15px;
+                display: flex;
+                left: 150px;
+            }
+
+        .existing-comments {
+            margin-bottom: 20px;
+        }
+
+            .existing-comments p {
+                background-color: #f9f9f9;
+                padding: 10px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                font-size: 0.95em;
+            }
+
+            .existing-comments strong {
+                color: #333;
+                font-weight: bold;
+            }
+
+        .add-comment h4 {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .add-comment textarea {
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 0.95em;
+            margin-bottom: 10px;
+            resize: vertical;
+        }
+
+        .add-comment .submit-comment {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            .add-comment .submit-comment:hover {
+                background-color: #218838;
+            }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="product-details">
-            <div class="image-container">
-                <img src="~/imagens/topverao.jfif" alt="Imagem do Produto" class="product-image">
+    <div class="product-details">
+        <div class="image-container">
+            <img src="~/imagens/topverao.jfif" alt="Imagem do Produto" class="product-image">
+        </div>
+        <div class="details">
+            <h1>Top Verão</h1>
+            <p class="price">R$ 55,00</p>
+            <p class="description">
+                Este elegante top de verão combina conforto e estilo, sendo a escolha perfeita para dias ensolarados. Com seu design moderno e ombros de fora, ele valoriza a silhueta feminina e proporciona uma sensação de leveza e frescor, ideal para ocasiões casuais ou eventos ao ar livre.
+            </p>
+
+            <div class="form-group">
+                <label>Cores disponíveis:</label>
+                <div class="color-options">
+                    <label class="color-option">
+                        <input type="radio" name="cor" value="verde" checked>
+                        <img src="https://via.placeholder.com/50/008000/FFFFFF?text=" alt="Verde">
+                    </label>
+
+                    <label class="color-option">
+                        <input type="radio" name="cor" value="vermelho">
+                        <img src="https://via.placeholder.com/50/FF0000/FFFFFF?text=" alt="Vermelho">
+                    </label>
+
+                    <label class="color-option">
+                        <input type="radio" name="cor" value="azul">
+                        <img src="https://via.placeholder.com/50/0000FF/FFFFFF?text=" alt="Azul">
+                    </label>
+
+                    <label class="color-option">
+                        <input type="radio" name="cor" value="preto">
+                        <img src="https://via.placeholder.com/50/000000/FFFFFF?text=" alt="Preto">
+                    </label>
+                </div>
             </div>
-            <div class="details">
-                <h1>Top Verao</h1>
-                <p class="price">R$ 85,00</p>
-                <p class="description">
-                    Este elegante top de verão combina conforto e estilo, sendo a escolha perfeita para dias ensolarados. Com seu design moderno e ombros de fora, ele valoriza a silhueta feminina e proporciona uma sensação de leveza e frescor, ideal para ocasiões casuais ou eventos ao ar livre. 
-                </p>
 
-                <div class="form-group">
-                    <label>Escolha a cor:</label>
-                    <div class="color-options">
-                        <label class="color-option">
-                            <input type="radio" name="cor" value="vermelho" checked>
-                            <img src="https://via.placeholder.com/50/FF0000/FFFFFF?text=" alt="Vermelho">
-                        </label>
-                        <label class="color-option">
-                            <input type="radio" name="cor" value="azul">
-                            <img src="https://via.placeholder.com/50/0000FF/FFFFFF?text=" alt="Azul">
-                        </label>
-                        <label class="color-option">
-                            <input type="radio" name="cor" value="verde">
-                            <img src="https://via.placeholder.com/50/008000/FFFFFF?text=" alt="Verde">
-                        </label>
-                        <label class="color-option">
-                            <input type="radio" name="cor" value="preto">
-                            <img src="https://via.placeholder.com/50/000000/FFFFFF?text=" alt="Preto">
-                        </label>
-                    </div>
+            <div class="form-group">
+                <label for="tamanho">Tamanho:</label>
+                <select id="tamanho" name="tamanho">
+                    <option value="p">P</option>
+                    <option value="m">M</option>
+                    <option value="g">G</option>
+                    <option value="gg">GG</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn add-to-cart">Adicionar ao Carrinho</button>
+                <button type="button" class="btn buy-now">Comprar</button>
+            </div>
+
+
+            <div class="rating-section">
+                <h3>Avaliação do Produto</h3>
+                <div class="stars">
+                    <input type="radio" id="estrela5" name="estrela" value="5"><label for="estrela5" title="5 estrelas">★</label>
+                    <input type="radio" id="estrela4" name="estrela" value="4"><label for="estrela4" title="4 estrelas">★</label>
+                    <input type="radio" id="estrela3" name="estrela" value="3"><label for="estrela3" title="3 estrelas">★</label>
+                    <input type="radio" id="estrela2" name="estrela" value="2"><label for="estrela2" title="2 estrelas">★</label>
+                    <input type="radio" id="estrela1" name="estrela" value="1"><label for="estrela1" title="1 estrela">★</label>
+                </div>
+            </div>
+
+
+            <div class="comments-section">
+                <h3>Comentários</h3>
+                <div class="existing-comments">
+                    <p><strong>Maria:</strong> Adorei esse top, super confortável e estiloso!</p>
+                    <p><strong>Ana:</strong> O tecido é de ótima qualidade, recomendo!</p>
                 </div>
 
-                <div class="form-group">
-                    <label for="tamanho">Escolha o tamanho:</label>
-                    <select id="tamanho" name="tamanho">
-                        <option value="p">P</option>
-                        <option value="m">M</option>
-                        <option value="g">G</option>
-                        <option value="gg">GG</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="quantidade">Quantidade:</label>
-                    <input type="number" id="quantidade" name="quantidade" min="1" value="1">
-                </div>
-
-                <div class="button-group">
-                    <button type="submit" class="btn add-to-cart">Adicionar ao Carrinho</button>
-                    <button type="button" class="btn buy-now">Comprar</button>
+                <div class="add-comment">
+                    <h4>Deixe seu comentário:</h4>
+                    <textarea name="comentario" id="comentario" rows="4" placeholder="Escreva seu comentário aqui..."></textarea>
+                    <button type="submit" class="btn submit-comment">Enviar Comentário</button>
                 </div>
             </div>
         </div>

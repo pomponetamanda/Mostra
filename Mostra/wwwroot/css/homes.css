@@ -72,27 +72,27 @@
     border-bottom: 2px solid #ccc;
 }
 
-    .historia .container1 {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
+.historia .container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+    .historia .container1 .coluna {
+        flex: 1 1 350px;
     }
 
-        .historia .container1 .coluna {
-            flex: 1 1 350px;
+        .historia .container1 .coluna p {
+            font-size: 20px;
         }
 
-            .historia .container1 .coluna p {
-                font-size: 20px;
-            }
-
-    .historia img {
-        margin-left: 30px;
-        width: 80%;
-        display: block;
-    }
+.historia img {
+    margin-left: 30px;
+    width: 80%;
+    display: block;
+}
 
 
 /*OBJETIVO*/

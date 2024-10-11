@@ -5,7 +5,8 @@
     padding: 0;
 }
 
-/*banner*/
+/banner/
+
 h3 {
     font-size: 24px; /* Tamanho da fonte maior */
     color: #333; /* Cor do texto */
@@ -15,6 +16,18 @@ h3 {
     font-weight: bold; /* Deixa o texto em negrito */
     padding-bottom: 10px; /* Espaço entre o texto e a linha */
 }
+
+.banner {
+    width: 100%; /* Faz com que o contêiner do banner ocupe toda a largura */
+    overflow: hidden; /* Garante que o conteúdo extra não transborde */
+}
+
+    .banner img {
+        width: 100%; /* A imagem ocupará toda a largura do contêiner */
+        height: 100%; /* A imagem também se ajustará à altura */
+        object-fit: cover; /* Faz com que a imagem preencha o contêiner sem distorção */
+        display: flex;
+    }
 
 .container-categorias {
     display: flex;
@@ -121,7 +134,7 @@ h3 {
     font-weight: normal; /* Define o peso da fonte como normal */
 }
 
-/*LOJAS NOVAS*/
+/LOJAS NOVAS/
 
 .container {
     text-align: center;
@@ -155,11 +168,3 @@ h3 {
         color: #666;
         font-size: 1rem;
     }
-
-
-.banner {
-    width: 100%; /* Faz com que o contêiner do banner ocupe toda a largura */
-    height: 100vh; /* A altura será de 100% da altura da tela (viewport height) */
-    overflow: hidden; /* Garante que o conteúdo extra não transborde */
-    display: flex;
-}

@@ -1,10 +1,10 @@
 ﻿.container4 {
     margin: auto;
     padding: 60px;
-    background-color: #6B2E38;
+    background-color: #5d0703;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin-top: 100px;
+    margin-top: 80px;
     text-align: center;
     max-width: 1000px;
     max-height: 1000px;
@@ -34,6 +34,7 @@
     height: 290px;
     text-align: center;
     margin-top: 8px;
+    display: block;
 }
 
 .foto {
@@ -54,16 +55,19 @@
     display: flex;
     margin: auto;
     width: 150px;
-    margin-top: 35px;
+    text-decoration: none;
 }
 
 
 .botao-empresa {
-    margin-left: 40px;
+    margin-left: 32px;
     display: fixed;
+    display: block;
+    text-decoration: none;
 }
 
 .botao-cliente {
-    margin-left: 48px;
-    display: fixed;
+    margin-left: 40px;
+    display: block;
+    text-decoration: none;
 }

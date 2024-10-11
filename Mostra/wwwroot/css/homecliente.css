@@ -1,0 +1,41 @@
+﻿.inicio {
+    justify-content: center;
+    align-items: center;
+}
+
+    .inicio h2 {
+        padding-top: 100px;
+        font-family: Arial;
+        color: #6B2E38;
+        text-align: center;
+        margin: auto;
+        width: 900px;
+    }
+
+    .inicio img {
+        width: 400px;
+        margin: auto;
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+
+.botao {
+    color: beige;
+    background-color: #5d0703;
+    text-decoration: none;
+    margin: auto;
+    display: block;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    margin-bottom: 80px;
+}
+
+    .botao:hover {
+        background-color: #380c13;
+    }
+
+.inicio a {
+    text-decoration: none;
+}

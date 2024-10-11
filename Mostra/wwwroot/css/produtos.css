@@ -20,12 +20,7 @@
 .product-image {
     max-width: 100%;
     border-radius: 10px;
-    transition: transform 0.2s;
 }
-
-    .product-image:hover {
-        transform: scale(1.05);
-    }
 
 .details {
     flex: 1;
@@ -110,6 +105,7 @@ select, input[type="number"] {
 
 .add-to-cart {
     background-color: #ff6f61;
+    border-radius: 25px;
 }
 
     .add-to-cart:hover {
@@ -118,12 +114,13 @@ select, input[type="number"] {
 
 .buy-now {
     background-color: #28a745;
+    border-radius: 25px;
 }
 
     .buy-now:hover {
         background-color: #218838;
     }
 
-.details p{
-    text-align:justify;
+.details p {
+    text-align: justify;
 }

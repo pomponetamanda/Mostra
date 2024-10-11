@@ -7,18 +7,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Pages2\**" />
     <Compile Remove="wwwroot\NovaPasta1\**" />
     <Compile Remove="wwwroot\NovaPasta\**" />
+    <Content Remove="Pages2\**" />
     <Content Remove="wwwroot\NovaPasta1\**" />
     <Content Remove="wwwroot\NovaPasta\**" />
+    <EmbeddedResource Remove="Pages2\**" />
     <EmbeddedResource Remove="wwwroot\NovaPasta1\**" />
     <EmbeddedResource Remove="wwwroot\NovaPasta\**" />
+    <None Remove="Pages2\**" />
     <None Remove="wwwroot\NovaPasta1\**" />
     <None Remove="wwwroot\NovaPasta\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Remove="Pages\EdiatPerfilEmporesa.cshtml" />
+    <Content Remove="Pages\HomeCliente.cshtml" />
+    <Content Remove="Pages\QuemSomos.cshtml" />
+    <Content Remove="wwwroot\css\quemsomos.css" />
   </ItemGroup>
 
   <ItemGroup>
