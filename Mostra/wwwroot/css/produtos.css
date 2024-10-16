@@ -124,3 +124,11 @@ select, input[type="number"] {
 .details p {
     text-align: justify;
 }
+
+
+.detalhespt2{
+    display: flex;
+    right:300px;
+
+}
+
