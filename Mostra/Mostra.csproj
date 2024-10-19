@@ -22,6 +22,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Pages\produto2.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="Pages\EdiatPerfilEmporesa.cshtml" />
     <Content Remove="Pages\HomeCliente.cshtml" />
     <Content Remove="Pages\QuemSomos.cshtml" />

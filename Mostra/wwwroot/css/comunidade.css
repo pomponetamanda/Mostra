@@ -1,71 +1,148 @@
-﻿.forum h1 {
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.hero {
+    background-color: #f4f3e6;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: #6B2E38;
+    padding: 0 20px;
+    color: #fff;
 }
 
-.forum h3{
-    text-align: justify;
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
-.card-container {
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #5d0703;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+    .cta-button:hover {
+        background-color: #8b0e07;
+    }
+
+.about-community {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+    .about-community h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #6B2E38;
+    }
+
+    .about-community p {
+        font-size: 1.1em;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+.testimonials {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+    .testimonials h2 {
+        font-size: 2.5em;
+        color: #6B2E38;
+        margin-bottom: 40px;
+    }
+
+.testimonial-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
-.card {
-    background: #fffbfb;
-    color: #161616;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.testimonial-card {
+    background-color: #fff;
     padding: 20px;
+    border-radius: 10px;
     width: 300px;
-    height: 550px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.foto {
-    width: 100px;
-    height: 100px;
+.testimonial-img {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.testimonial-card h3 {
+    font-size: 1.5em;
+    color: #6B2E38;
     margin-bottom: 10px;
 }
 
-.user {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-.education {
+.role {
     font-size: 1em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    font-size: 0.95em;
     color: #555;
-    margin: 5px 0;
 }
 
-.bio {
-    font-size: 0.9em;
-    color: #666;
+.join-community {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .join-community h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #6B2E38;
+    }
 
-.botao2 {
-    color: beige;
-    background-color: #5d0703;
-    text-decoration: none;
-    width: 200px;
-    height: 50px;
-    border-radius: 8px;
-    margin-top: 50px;
-    margin-bottom: 80px;
-}
-
-    .botao2:hover {
-        background-color: #380c13;
+    .join-community p {
+        font-size: 1.1em;
+        max-width: 700px;
+        margin: 0 auto 30px auto;
     }

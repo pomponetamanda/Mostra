@@ -1,38 +1,68 @@
-﻿.container9 {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Estilos para o header */
-.header2 {
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header2 {
+    background-color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 40px 0;
+    border-bottom: 2px solid #e3e3e3;
 }
 
 .logope {
-    max-width: 300px;
-    margin-bottom: 10px;
+    width: 200px;
 }
 
-.header2 h1 {
-    font-size: 2.5em;
-    font-weight: lighter;
-    color: #6B2E38;
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
 }
 
-main {
-    padding: 20px;
-}
-
-section {
+.about {
+    background-color: #fff;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
 }
 
-    section contato {
-        border-top: 1px solid #e0e0e0;
+h1, h3 {
+    font-size: 2.4rem;
+    color: #5d0703;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    text-align: justify;
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+    .about-content p {
+        margin-bottom: 20px;
     }
 
+    .about-content strong {
+        color: #5d0703;
+        font-size: 1.3rem;
+    }
+
+/* Estilo para a seção de produtos */
 .produto {
     display: inline-block;
     width: 30%;
@@ -54,3 +84,16 @@ section {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
+.contact {
+    background-color: #fff;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+    .contact p {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 10px;
+    }

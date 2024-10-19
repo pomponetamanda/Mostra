@@ -8,227 +8,227 @@
     <link rel="stylesheet" href="/css/produtos.css" />
 
     <style>
-        /* CSS para a Avaliação (Estrelas) */
+         /* CSS para a Avaliação (Estrelas) */
 
-       .rating {
-            display: flex;
-            align-items: center;
-            padding: 30px;
-            background-color: #f9f9f9;
-
-           
-        }
-        .stars {
-            display: flex;
+        .rating {
+             display: flex;
+             align-items: center;
+             padding: 30px;
+             background-color: #f9f9f9;
 
 
-        }
-        .stars span {
-            font-size: 40px;
-            color: gold;
-        }
-        .bar-container {
-            display: flex;
-            align-items: center;
-            margin-top: 10px;
-        }
-        .bar {
-            width: 100px;
-            height: 10px;
-            background-color: lightgray;
-            margin: 0 5px;
-            position: relative;
-        }
-        .bar div {
-            height: 100%;
-            background-color: green;
-        }
-        .bar.small div {
-            width: 7%;
-        }
-        .bar.true div {
-            width: 92%;
-        }
-        .bar.large div {
-            width: 1%;
-        }
-
-        /* CSS para a Seção de Comentários */
-        .comments-section {
-            margin-top: 30px;
-        }
-
-            .comments-section h3 {
-                font-size: 1.2em;
-                margin-bottom: 15px;
-                display: flex;
-                left: 150px;
-            }
-
-        .existing-comments {
-            margin-bottom: 20px;
-        }
-
-            .existing-comments p {
-                background-color: #f9f9f9;
-                padding: 10px;
-                border-radius: 5px;
-                margin-bottom: 10px;
-                font-size: 0.95em;
-            }
-
-            .existing-comments strong {
-                color: #333;
-                font-weight: bold;
-            }
-
-        .add-comment h4 {
-            font-size: 1em;
-            margin-bottom: 10px;
-        }
-
-        .add-comment textarea {
-            width: 100%;
-            height: 80px;
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-            font-size: 0.95em;
-            margin-bottom: 10px;
-            resize: vertical;
-        }
-
-        .add-comment .submit-comment {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-            .add-comment .submit-comment:hover {
-                background-color: #218838;
-            }
-
-            /*CSS PARA COMPRE MAIS*/
-        .product-section {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-          
-        }
-
-        .product {
-            text-align: center;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 10px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
-        }
-
-            .product img {
-                max-width: 100%;
-                height: auto;
-                border-radius: 10px;
-            }
-
-            .product h2 {
-                font-size: 1.5em;
-                margin: 10px 0;
-                color: #333;
-            }
-
-            .product p {
-                font-size: 1.2em;
-                color: #666;
-            }
-
-            .product button {
-                padding: 10px 20px;
-                font-size: 1em;
-                color: #fff;
-                background-color: #007bff;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                transition: background-color 0.3s;
-            }
-
-                .product button:hover {
-                    background-color: #0056b3;
-                }
-
-            .product:hover {
-                transform: scale(1.05);
-            }
+         }
+         .stars {
+             display: flex;
 
 
-        /*CSS PARA DESCRIÇÃO*/
+         }
+         .stars span {
+             font-size: 40px;
+             color: gold;
+         }
+         .bar-container {
+             display: flex;
+             align-items: center;
+             margin-top: 10px;
+         }
+         .bar {
+             width: 100px;
+             height: 10px;
+             background-color: lightgray;
+             margin: 0 5px;
+             position: relative;
+         }
+         .bar div {
+             height: 100%;
+             background-color: green;
+         }
+         .bar.small div {
+             width: 7%;
+         }
+         .bar.true div {
+             width: 92%;
+         }
+         .bar.large div {
+             width: 1%;
+         }
+
+         /* CSS para a Seção de Comentários */
+         .comments-section {
+             margin-top: 30px;
+         }
+
+             .comments-section h3 {
+                 font-size: 1.2em;
+                 margin-bottom: 15px;
+                 display: flex;
+                 left: 150px;
+             }
+
+         .existing-comments {
+             margin-bottom: 20px;
+         }
+
+             .existing-comments p {
+                 background-color: #f9f9f9;
+                 padding: 10px;
+                 border-radius: 5px;
+                 margin-bottom: 10px;
+                 font-size: 0.95em;
+             }
+
+             .existing-comments strong {
+                 color: #333;
+                 font-weight: bold;
+             }
+
+         .add-comment h4 {
+             font-size: 1em;
+             margin-bottom: 10px;
+         }
+
+         .add-comment textarea {
+             width: 100%;
+             height: 80px;
+             padding: 10px;
+             border-radius: 5px;
+             border: 1px solid #ddd;
+             font-size: 0.95em;
+             margin-bottom: 10px;
+             resize: vertical;
+         }
+
+         .add-comment .submit-comment {
+             background-color: #28a745;
+             color: white;
+             border: none;
+             padding: 10px 15px;
+             border-radius: 5px;
+             cursor: pointer;
+         }
+
+             .add-comment .submit-comment:hover {
+                 background-color: #218838;
+             }
+
+             /*CSS PARA COMPRE MAIS*/
+         .product-section {
+             display: flex;
+             justify-content: space-around;
+             padding: 20px;
+
+         }
+
+         .product {
+             text-align: center;
+             border: 1px solid #ddd;
+             border-radius: 10px;
+             padding: 10px;
+             background-color: #fff;
+             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+             transition: transform 0.2s;
+         }
+
+             .product img {
+                 max-width: 100%;
+                 height: auto;
+                 border-radius: 10px;
+             }
+
+             .product h2 {
+                 font-size: 1.5em;
+                 margin: 10px 0;
+                 color: #333;
+             }
+
+             .product p {
+                 font-size: 1.2em;
+                 color: #666;
+             }
+
+             .product button {
+                 padding: 10px 20px;
+                 font-size: 1em;
+                 color: #fff;
+                 background-color: #007bff;
+                 border: none;
+                 border-radius: 5px;
+                 cursor: pointer;
+                 transition: background-color 0.3s;
+             }
+
+                 .product button:hover {
+                     background-color: #0056b3;
+                 }
+
+             .product:hover {
+                 transform: scale(1.05);
+             }
 
 
-    
-        .header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
+         /*CSS PARA DESCRIÇÃO*/
 
-        .description {
-            margin-bottom: 10px;
-        }
 
-        .accordion-item {
-            border-top: 1px solid #ddd;
-        }
 
-        .accordion-label {
-            background-color: #fff;
-            cursor: pointer;
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: bold;
-        }
+         .header {
+             display: flex;
+             justify-content: space-between;
+             margin-bottom: 10px;
+         }
 
-            .accordion-label::after {
-                content: "\002B"; /* Plus symbol */
-                font-size: 18px;
-            }
+         .description {
+             margin-bottom: 10px;
+         }
 
-        input[type="checkbox"] {
-            display: none;
-        }
+         .accordion-item {
+             border-top: 1px solid #ddd;
+         }
 
-        .accordion-content {
-            display: none;
-            padding: 10px;
-            background-color: #fafafa;
-            border-bottom: 1px solid #ddd;
-        }
+         .accordion-label {
+             background-color: #fff;
+             cursor: pointer;
+             padding: 10px;
+             border-bottom: 1px solid #ddd;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             font-weight: bold;
+         }
 
-        /* Quando o checkbox estiver marcado, exibe o conteúdo e altera o símbolo */
-        input[type="checkbox"]:checked + .accordion-label + .accordion-content {
-            display: block;
-        }
+             .accordion-label::after {
+                 content: "\002B"; /* Plus symbol */
+                 font-size: 18px;
+             }
 
-        input[type="checkbox"]:checked + .accordion-label::after {
-            content: "\2212"; /* Minus symbol */
-        }
+         input[type="checkbox"] {
+             display: none;
+         }
+
+         .accordion-content {
+             display: none;
+             padding: 10px;
+             background-color: #fafafa;
+             border-bottom: 1px solid #ddd;
+         }
+
+         /* Quando o checkbox estiver marcado, exibe o conteúdo e altera o símbolo */
+         input[type="checkbox"]:checked + .accordion-label + .accordion-content {
+             display: block;
+         }
+
+         input[type="checkbox"]:checked + .accordion-label::after {
+             content: "\2212"; /* Minus symbol */
+         }
 
     </style>
 </head>
 <body>
     <div class="product-details">
         <div class="image-container">
-            <img src="~/imagens/topverao.jfif" alt="Imagem do Produto" class="product-image">
+            <img src="~/imagens/sapato1.png" alt="Imagem do Produto" class="product-image">
 
             <section class="rating">
-                <h3>Avaliação dos Clientes</h3> 
+                <h3>Avaliação dos Clientes</h3>
                 <br />
                 <span>4.91</span>
 
@@ -254,7 +254,7 @@
 
 
             <div class="comments-section">
-                
+
                 <div class="existing-comments">
                     <p><strong>Maria:</strong> Adorei esse top, super confortável e estiloso!</p>
                     <p><strong>Ana:</strong> O tecido é de ótima qualidade, recomendo!</p>
@@ -269,10 +269,10 @@
         </div>
 
         <div class="details">
-            <h1>Top Verão</h1>
+            <h1>Sandália Feminina Artesanal em Crochê - Amarela</h1>
             <p class="price">R$ 55,00</p>
             <p class="description">
-                Este elegante top de verão combina conforto e estilo, sendo a escolha perfeita para dias ensolarados. Com seu design moderno e ombros de fora, ele valoriza a silhueta feminina e proporciona uma sensação de leveza e frescor, ideal para ocasiões casuais ou eventos ao ar livre.
+                Destaque-se com estilo e conforto! Esta sandália artesanal em crochê, na cor amarela, é ideal para quem busca um toque de originalidade e leveza no dia a dia. Feita à mão, cada par é único e combina o rústico com o moderno. A sola emborrachada garante aderência e conforto para os pés, enquanto o design com amarração ajustável traz um visual delicado e charmoso.
             </p>
 
             <div class="form-group">
@@ -317,8 +317,7 @@
 
             <div class="button-group">
                 <button type="submit" class="btn add-to-cart">Adicionar ao Carrinho</button>
-                <a href="https://www.asaas.com/c/oyfqgpm2hjwk1uk4"> Comprar Top</a>
-                <button type="button" href="https://www.asaas.com/c/oyfqgpm2hjwk1uk4" class="btn buy-now">Comprar</button>
+                <button type="button" class="btn buy-now">Comprar</button>
             </div>
 
             <section class="product-section">
@@ -385,7 +384,7 @@
                 </div>
             </div>
 
-    </div>
+        </div>
 
 </body>
 </html>
