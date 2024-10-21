@@ -15,6 +15,7 @@
         color: #5d0703;
     }
 
+
 .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -36,6 +37,10 @@
     display: block;
 }
 
+.cards-container h3 {
+    color: #5d0703;
+}
+
 .foto {
     width: 180px;
     height: 180px;
@@ -48,26 +53,4 @@
     transform: translateY(-10px);
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
 }
-.botao3 {
-    padding: 10px 20px;
-    background-color: #8C3F4C;
-    color: #000000;
-    border-radius: 540px;
-    cursor: pointer;
-    display: flex;
-    margin: auto;
-    width: 150px;
-}
 
-
-.botao-empresa {
-    margin-left: 32px;
-    display: fixed;
-    display: block;
-}
-
-
-.botao-cliente {
-    margin-left: 40px;
-    display: block;
-}
