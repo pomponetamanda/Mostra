@@ -1,17 +1,4 @@
-﻿* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-}
-
-.hero {
+﻿.hero {
     background-color: #f4f3e6;
     background-size: cover;
     background-position: center;
