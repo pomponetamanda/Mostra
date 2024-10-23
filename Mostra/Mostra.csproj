@@ -28,8 +28,18 @@
   <ItemGroup>
     <Content Remove="Pages\EdiatPerfilEmporesa.cshtml" />
     <Content Remove="Pages\HomeCliente.cshtml" />
+    <Content Remove="Pages\Login.cshtml" />
     <Content Remove="Pages\QuemSomos.cshtml" />
+    <Content Remove="Pages\Shared\Footer1.cshtml" />
+    <Content Remove="Pages\Shared\Footer2.cshtml" />
+    <Content Remove="Pages\Shared\Footer3.cshtml" />
+    <Content Remove="Pages\Shared\Navbar1.cshtml" />
+    <Content Remove="Pages\Shared\Navbar2.cshtml" />
+    <Content Remove="Pages\Shared\Navbar3.cshtml" />
+    <Content Remove="wwwroot\css\cadastrocliente.css" />
+    <Content Remove="wwwroot\css\login.css" />
     <Content Remove="wwwroot\css\quemsomos.css" />
+    <Content Remove="wwwroot\imagens\logo.png" />
   </ItemGroup>
 
   <ItemGroup>

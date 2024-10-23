@@ -93,3 +93,11 @@
     .quick-button:hover {
         background-color: #018786;
     }
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

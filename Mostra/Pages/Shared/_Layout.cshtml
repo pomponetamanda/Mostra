@@ -13,82 +13,87 @@
 <body>
 
     <header>
-        <div class="menu">
-            <h1>Império </br> Feminino</h1>
-            <nav>
-                <ul>
-                    <li class="nav-item">
-                        <a class="nav-link" asp-area="" asp-page="/Index">Home</a>
-                    </li>
+            <nav class="navbar">
 
-                    <li class="nav-item">
-                        <a class="nav-link" asp-area="" asp-page="/Privacy">Comunidade</a>
-                    </li>
+                <div class="logo">
+                    <a href="/Index">
+                        <img src="~/imagens/logo - Cópia.png" alt="moça" />
+                    </a>
 
-                    <li class="nav-item">
-                        <a class="nav-link" asp-area="" asp-page="/Lojas">Lojas</a>
-                    </li>
-
-
-                </ul>
-
-                <div class="search-bar">
-                    <input type="text" placeholder="Insira sua busca">
-                    <button><i class="fas fa-search"></i></button>
                 </div>
 
-                <a href="/EscolhaCadastro">
-                    <button class="botaoH" type="button">Login</button>
-                </a>
-                
-                <!--
-                <a href="/PerfilEmpresa">
-                                    <div class="profile-image">
-                                        <img src="~/imagens/amani.jpg" alt="moça" />
-                                    </div>
-                                </a>
-                -->
-                
+                    <ul>
+                        <li class="nav-item">
+                             <a class="nav-link" asp-area="" asp-page="/Index">Home</a>
+                        </li>
 
-            </nav>
-        </div>
+                        <li class="nav-item">
+
+                            <a class="nav-link" asp-area="" asp-page="/Privacy">Comunidade</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Lojas">Lojas</a>
+                        </li>
+                    </ul>
+                    
+            <div class="search-bar">
+                                      <input type="text" placeholder="Insira sua busca">
+                                       <button><i class="fas fa-search"></i></button>
+                                 </div>
+                    
+                     
+
+                      <a href="/EscolhaCadastro">
+                           <button class="botaoH" type="button">Login</button>
+                      </a>
+
+            <!--
+                        <a href="/PerfilEmpresa">
+              <div class="profile-image">
+               <img src="~/imagens/amani.jpg" alt="moça" />
+               </div>
+            </a>-->
+                    
+    </nav>
     </header>
+    
 
+    
     <div class="container">
         <main role="main" class="pb-3">
 @RenderBody()
         </main>
     </div>
 
+
     <footer class="border-top footer text-muted">
 
-            <div class="logo">
-                <img src="~/imagens/logo.png" alt="moça" />
-            </div>
+                    <div className='itens'>
+                        <nav className="menu-baixo">
 
+                            <ul className="menu-nav">
 
-            <div className='itens'>
-                <nav className="menu-baixo">
+                                <li class="footer-item">
+                                    <a class="nav-link" asp-area="" asp-page="/QuemSomos2">Quem Somos</a>
+                                </li>
 
-                    <ul className="menu-nav">
+                                <li class="footer-item">
+                                    <a class="nav-link" asp-area="" asp-page="/Privacy">Comunidade</a>
+                                </li>
 
-                        <li class="footer-item">
-                            <a class="nav-link" asp-area="" asp-page="/QuemSomos2">Quem Somos</a>
-                        </li>
+                                <li class="footer-item">
+                                    <a class="nav-link" asp-area="" asp-page="#">Contato: imperiofeminino@gmail.com</a>
+                                </li>
 
-                        <li class="footer-item">
-                            <a class="nav-link" asp-area="" asp-page="/Privacy">Comunidade</a>
-                        </li>
+                            </ul>
+                        </nav>
+                    </div>
 
-                        <li class="footer-item">
-                            <a class="nav-link" asp-area="" asp-page="/Faleconosco">Fale Conosco</a>
-                        </li>
-
-                    </ul>
-                </nav>
-            </div>
-
-    </footer>
+            </footer>
+    
+    
+    
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -96,3 +101,4 @@
 
 @await RenderSectionAsync("Scripts", required: false)
 </body>
+</html>

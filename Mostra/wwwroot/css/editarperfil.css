@@ -80,3 +80,11 @@
     .update-button:hover {
         background-color: #6d3b44;
     }
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

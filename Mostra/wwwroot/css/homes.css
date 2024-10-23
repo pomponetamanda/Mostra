@@ -1,4 +1,8 @@
-﻿.inicio {
+﻿
+
+/*CONTEUDO*/
+
+.inicio {
     justify-content: center;
     align-items: center;
 }
@@ -280,3 +284,12 @@
         color: #666;
         font-size: 1rem;
     }
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+

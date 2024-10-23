@@ -1,8 +1,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f3e6;
-    margin: 0;
-    padding: 0;
 }
 
 .botaoH {
@@ -24,7 +22,11 @@ header {
     border-bottom: 1px solid #ddd;
 }
 
-.menu {
+.logo img {
+    width: 100px;
+}
+
+.navbar {
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
@@ -37,7 +39,10 @@ header {
 
     .menu h1 {
         color: #f4eeed;
+        text-decoration: none;
     }
+
+
 
 nav {
     display: flex;
@@ -116,11 +121,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100px;
 }
 
-    .footer img {
-        width: 150px;
-    }
 
 .itens {
     padding: 16px;

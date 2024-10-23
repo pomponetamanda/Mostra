@@ -1,14 +1,6 @@
-﻿* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f3e6;
 }
 
 header2 {
@@ -97,3 +89,11 @@ h1, h3 {
         color: #666;
         margin-bottom: 10px;
     }
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

@@ -39,3 +39,11 @@
 .inicio a {
     text-decoration: none;
 }
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

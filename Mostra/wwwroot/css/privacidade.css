@@ -33,3 +33,11 @@ footer {
     font-size: 0.9em;
     color: #777;
 }
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

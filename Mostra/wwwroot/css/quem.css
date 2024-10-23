@@ -65,3 +65,11 @@ h3 {
     .mission .intro {
         font-weight: bold;
     }
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

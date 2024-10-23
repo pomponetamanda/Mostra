@@ -8,218 +8,223 @@
     <link rel="stylesheet" href="/css/produtos.css" />
 
     <style>
-         /* CSS para a Avaliação (Estrelas) */
+        /* CSS para a Avaliação (Estrelas) */
 
         .rating {
-             display: flex;
-             align-items: center;
-             padding: 30px;
-             background-color: #f9f9f9;
+            display: flex;
+            align-content: center;
+            padding: 30px;
+            background-color: #f9f9f9;
+        }
+
+            .rating h3 {
+                align-items: center;
+            }
+
+        .stars {
+            display: flex;
+        }
+
+            .stars span {
+                font-size: 40px;
+                color: gold;
+            }
 
 
-         }
-         .stars {
-             display: flex;
+        /* CSS para a Seção de Comentários */
+        .comments-section {
+            margin-top: 30px;
+        }
+
+            .comments-section h3 {
+                font-size: 1.2em;
+                margin-bottom: 15px;
+                display: flex;
+                left: 150px;
+            }
+
+        .existing-comments {
+            margin-bottom: 20px;
+        }
+
+            .existing-comments p {
+                background-color: #f9f9f9;
+                padding: 10px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                font-size: 0.95em;
+            }
+
+            .existing-comments strong {
+                color: #333;
+                font-weight: bold;
+            }
+
+        .add-comment h4 {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .add-comment textarea {
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 0.95em;
+            margin-bottom: 10px;
+            resize: vertical;
+        }
+
+        .add-comment .submit-comment {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            .add-comment .submit-comment:hover {
+                background-color: #218838;
+            }
+
+        /* CSS PARA TALVEZ VOCÊ GOSTE*/
+        .complete-look-section {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+            .complete-look-section h3 {
+                font-size: 1.5em;
+                margin-bottom: 15px;
+            }
+
+        .product-list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product-item {
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+            .product-item img {
+                width: 150px;
+                height: auto;
+                border-radius: 8px;
+            }
 
 
-         }
-         .stars span {
-             font-size: 40px;
-             color: gold;
-         }
-         .bar-container {
-             display: flex;
-             align-items: center;
-             margin-top: 10px;
-         }
-         .bar {
-             width: 100px;
-             height: 10px;
-             background-color: lightgray;
-             margin: 0 5px;
-             position: relative;
-         }
-         .bar div {
-             height: 100%;
-             background-color: green;
-         }
-         .bar.small div {
-             width: 7%;
-         }
-         .bar.true div {
-             width: 92%;
-         }
-         .bar.large div {
-             width: 1%;
-         }
+        .product-name {
+            font-size: 15px;
+            color: #333;
+        }
 
-         /* CSS para a Seção de Comentários */
-         .comments-section {
-             margin-top: 30px;
-         }
-
-             .comments-section h3 {
-                 font-size: 1.2em;
-                 margin-bottom: 15px;
-                 display: flex;
-                 left: 150px;
-             }
-
-         .existing-comments {
-             margin-bottom: 20px;
-         }
-
-             .existing-comments p {
-                 background-color: #f9f9f9;
-                 padding: 10px;
-                 border-radius: 5px;
-                 margin-bottom: 10px;
-                 font-size: 0.95em;
-             }
-
-             .existing-comments strong {
-                 color: #333;
-                 font-weight: bold;
-             }
-
-         .add-comment h4 {
-             font-size: 1em;
-             margin-bottom: 10px;
-         }
-
-         .add-comment textarea {
-             width: 100%;
-             height: 80px;
-             padding: 10px;
-             border-radius: 5px;
-             border: 1px solid #ddd;
-             font-size: 0.95em;
-             margin-bottom: 10px;
-             resize: vertical;
-         }
-
-         .add-comment .submit-comment {
-             background-color: #28a745;
-             color: white;
-             border: none;
-             padding: 10px 15px;
-             border-radius: 5px;
-             cursor: pointer;
-         }
-
-             .add-comment .submit-comment:hover {
-                 background-color: #218838;
-             }
-
-             /*CSS PARA COMPRE MAIS*/
-         .product-section {
-             display: flex;
-             justify-content: space-around;
-             padding: 20px;
-
-         }
-
-         .product {
-             text-align: center;
-             border: 1px solid #ddd;
-             border-radius: 10px;
-             padding: 10px;
-             background-color: #fff;
-             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-             transition: transform 0.2s;
-         }
-
-             .product img {
-                 max-width: 100%;
-                 height: auto;
-                 border-radius: 10px;
-             }
-
-             .product h2 {
-                 font-size: 1.5em;
-                 margin: 10px 0;
-                 color: #333;
-             }
-
-             .product p {
-                 font-size: 1.2em;
-                 color: #666;
-             }
-
-             .product button {
-                 padding: 10px 20px;
-                 font-size: 1em;
-                 color: #fff;
-                 background-color: #007bff;
-                 border: none;
-                 border-radius: 5px;
-                 cursor: pointer;
-                 transition: background-color 0.3s;
-             }
-
-                 .product button:hover {
-                     background-color: #0056b3;
-                 }
-
-             .product:hover {
-                 transform: scale(1.05);
-             }
-
-
-         /*CSS PARA DESCRIÇÃO*/
+        .product-price {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #000;
+        }
 
 
 
-         .header {
-             display: flex;
-             justify-content: space-between;
-             margin-bottom: 10px;
-         }
+        /CSS PARA DESCRIÇÃO/
 
-         .description {
-             margin-bottom: 10px;
-         }
 
-         .accordion-item {
-             border-top: 1px solid #ddd;
-         }
 
-         .accordion-label {
-             background-color: #fff;
-             cursor: pointer;
-             padding: 10px;
-             border-bottom: 1px solid #ddd;
-             display: flex;
-             justify-content: space-between;
-             align-items: center;
-             font-weight: bold;
-         }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
 
-             .accordion-label::after {
-                 content: "\002B"; /* Plus symbol */
-                 font-size: 18px;
-             }
+        .ref {
+            font-weight: bold;
+        }
 
-         input[type="checkbox"] {
-             display: none;
-         }
+        .total-look {
+            font-weight: bold;
+        }
 
-         .accordion-content {
-             display: none;
-             padding: 10px;
-             background-color: #fafafa;
-             border-bottom: 1px solid #ddd;
-         }
+        .description {
+            margin-bottom: 10px;
+        }
 
-         /* Quando o checkbox estiver marcado, exibe o conteúdo e altera o símbolo */
-         input[type="checkbox"]:checked + .accordion-label + .accordion-content {
-             display: block;
-         }
+        .accordion-item {
+            border-top: 1px solid #ddd;
+        }
 
-         input[type="checkbox"]:checked + .accordion-label::after {
-             content: "\2212"; /* Minus symbol */
-         }
+        .accordion-label {
+            background-color: #fff;
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
 
+            .accordion-label::after {
+                content: "\002B"; /* Plus symbol */
+                font-size: 18px;
+            }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 10px;
+            background-color: #fafafa;
+            border-bottom: 1px solid #ddd;
+        }
+
+            .accordion-content h5 {
+                position: relative;
+                margin-right: 10px;
+            }
+        /* Quando o checkbox estiver marcado, exibe o conteúdo e altera o símbolo */
+        input[type="checkbox"]:checked + .accordion-label + .accordion-content {
+            display: block;
+        }
+
+        input[type="checkbox"]:checked + .accordion-label::after {
+            content: "\2212"; /* Minus symbol */
+        }
+
+        .sobrelojaimgdesc {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            border-radius: 4px;
+            position: relative;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .botoes-seguir-itens {
+            display: flex;
+            gap: 15px;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .follow {
+            background-color: #28a745;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -230,38 +235,18 @@
             <section class="rating">
                 <h3>Avaliação dos Clientes</h3>
                 <br />
-                <span>4.91</span>
 
-                <div class="stars">
-                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                </div>
             </section>
-            <div class="bar-container">
-                <span>Pequeno</span>
-                <div class="bar small"><div></div></div>
-                <span>7%</span>
-            </div>
-            <div class="bar-container">
-                <span>Tamanho Real</span>
-                <div class="bar true"><div></div></div>
-                <span>92%</span>
-            </div>
-            <div class="bar-container">
-                <span>Grande</span>
-                <div class="bar large"><div></div></div>
-                <span>1%</span>
-            </div>
-
 
             <div class="comments-section">
 
                 <div class="existing-comments">
-                    <p><strong>Maria:</strong> Adorei esse top, super confortável e estiloso!</p>
-                    <p><strong>Ana:</strong> O tecido é de ótima qualidade, recomendo!</p>
+                    <p><strong>Joana:</strong> Adorei essa gladiadora, super confortável e estilosa!</p>
+                    <p><strong>Mônica:</strong> Todos os detalhes são lindos e é de ótima qualidade, recomendo!</p>
                 </div>
 
                 <div class="add-comment">
-                    <h4>Deixe seu comentário:</h4>
+
                     <textarea name="comentario" id="comentario" rows="4" placeholder="Escreva seu comentário aqui..."></textarea>
                     <button type="submit" class="btn submit-comment">Enviar Comentário</button>
                 </div>
@@ -269,44 +254,24 @@
         </div>
 
         <div class="details">
-            <h1>Sandália Feminina Artesanal em Crochê - Amarela</h1>
-            <p class="price">R$ 55,00</p>
+            <h1>Gladiadora Amostrada</h1>
+
+            <div class="stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="price">R$ 109,00</p>
             <p class="description">
-                Destaque-se com estilo e conforto! Esta sandália artesanal em crochê, na cor amarela, é ideal para quem busca um toque de originalidade e leveza no dia a dia. Feita à mão, cada par é único e combina o rústico com o moderno. A sola emborrachada garante aderência e conforto para os pés, enquanto o design com amarração ajustável traz um visual delicado e charmoso.
+                Destaque-se com nossa gladiadora de crochê artesanal, feita à mão com fios de alta qualidade na cor amarela mostarda. Seu design único combina estilo e conforto, com tiras ajustáveis que envolvem o tornozelo, proporcionando um ajuste perfeito.
             </p>
 
-            <div class="form-group">
-                <label>Cores disponíveis:</label>
-                <div class="color-options">
-                    <label class="color-option">
-                        <input type="radio" name="cor" value="verde" checked>
-                        <img src="https://via.placeholder.com/50/008000/FFFFFF?text=" alt="Verde">
-                    </label>
-
-                    <label class="color-option">
-                        <input type="radio" name="cor" value="vermelho">
-                        <img src="https://via.placeholder.com/50/FF0000/FFFFFF?text=" alt="Vermelho">
-                    </label>
-
-                    <label class="color-option">
-                        <input type="radio" name="cor" value="azul">
-                        <img src="https://via.placeholder.com/50/0000FF/FFFFFF?text=" alt="Azul">
-                    </label>
-
-                    <label class="color-option">
-                        <input type="radio" name="cor" value="preto">
-                        <img src="https://via.placeholder.com/50/000000/FFFFFF?text=" alt="Preto">
-                    </label>
-                </div>
-            </div>
 
             <div class="form-group">
                 <label for="tamanho">Tamanho:</label>
                 <select id="tamanho" name="tamanho">
-                    <option value="p">P</option>
-                    <option value="m">M</option>
-                    <option value="g">G</option>
-                    <option value="gg">GG</option>
+                    <option value="p">34</option>
+                    <option value="m">36</option>
+                    <option value="g">38</option>
+                    <option value="gg">40</option>
                 </select>
             </div>
 
@@ -317,74 +282,77 @@
 
             <div class="button-group">
                 <button type="submit" class="btn add-to-cart">Adicionar ao Carrinho</button>
-                <button type="button" class="btn buy-now">Comprar</button>
+
+                <a href="https://www.asaas.com/c/70pmp4l22322yflk" class="btn buy-now">Comprar</a>
             </div>
 
-            <section class="product-section">
-                <div class="product">
-                    <img src="~/imagens/joias.jpg" alt="Calça Flare com Botões Dourados">
-                    <h2>Calça Flare com Botões Dourados</h2>
-                    <p>19,99 €</p>
-                    <button>Adicionar ao Carrinho</button>
+            <!-- TALVEZ VOCE GOSTE -->
+
+            <div class="complete-look-section">
+                <h3>Você também vai gostar</h3>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="~/imagens/sapato3.png" alt="Striped knit jumper">
+                        <p class="product-name">Tiradinha Amostrada</p>
+                        <p class="product-price">R$ 129.90</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="~/imagens/sapato4.png" alt="Baggy jeans with turn-up">
+                        <p class="product-name">Rita Amostrada</p>
+                        <p class="product-price">R$ 149.90</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="~/imagens/sapato5.png" alt="Lace-up shoes">
+                        <p class="product-name">Botinha Amostrada</p>
+                        <p class="product-price">R$ 169.90</p>
+                    </div>
                 </div>
-                <div class="product">
-                    <img src="~/imagens/maryjanes.png" alt="Mini Bolsa Transversal">
-                    <h2>Mini Bolsa Transversal</h2>
-                    <p>17,99 €</p>
-                    <button>Adicionar ao Carrinho</button>
-                </div>
-                <div class="product">
-                    <img src="~/imagens/SAIAA.jpg" alt="Brincos Geométricos">
-                    <h2>Brincos Geométricos</h2>
-                    <p>6,99 €</p>
-                    <button>Adicionar ao Carrinho</button>
-                </div>
-            </section>
+            </div>
+
 
             <!--  DESCRIÇÃO-->
             <div class="container">
                 <div class="header">
-                    <div class="ref">Ref 7252319</div>
-                    <div class="copy">[] Copy</div>
+                    <div class="total-look">Material e Detalhes</div>
+                    <div class="ref">Ref 1352319</div>
+
                 </div>
-                <div class="description">
-                    Fitted bandeau top with a fold-over neckline and contrast side stripes. Made of stretch fabric.
-                </div>
-                <div class="total-look">Total look</div>
                 <div class="accordion">
                     <div class="accordion-item">
                         <input type="checkbox" id="item1">
-                        <label class="accordion-label" for="item1">Composition and care</label>
+                        <label class="accordion-label" for="item1">Composição</label>
                         <div class="accordion-content">
-                            <p>Composition: 95% cotton, 5% elastane.</p>
-                            <p>Care: Machine wash at max 30ºC, do not bleach, do not tumble dry.</p>
+                            <p>Composição: 	94% Poliamida, 6% Elastano.</p>
+                            <p>Material: Tecido de malha.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <input type="checkbox" id="item2">
-                        <label class="accordion-label" for="item2">Share</label>
+                        <label class="accordion-label" for="item2">Detalhes da Peça</label>
                         <div class="accordion-content">
-                            <p>Share this product on social media!</p>
+                            <p>
+                                Artesanal, Crochê, Fechamento com tiras<br /> Material: Fio de algodão<br /> Estilo: Casual, Boho<br /> Cor: Amarelo Mostarda<br /> Fechamento: Amarração no tornozelo<br /> Altura do Salto: Flat (sem salto)<br /> Solado: Emborrachado e antiderrapante<br /> Ocasião: Dia a dia, Verão, Praia<br /> Caimento: Ajustável com tiras<br /> Instruções de manutenção: Limpeza com pano úmido ou lavagem à mão<br /> Translúcido: Não<br /> Composição: 100% Algodão (parte superior), Solado em borracha<br />
+                            </p>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <input type="checkbox" id="item3">
-                        <label class="accordion-label" for="item3">Availability in store</label>
-                        <div class="accordion-content">
-                            <p>Check availability in nearby stores.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <input type="checkbox" id="item4">
-                        <label class="accordion-label" for="item4">Shipping and returns</label>
-                        <div class="accordion-content">
-                            <p>Free shipping on orders over $50. Returns within 30 days.</p>
+
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="item4">
+                    <label class="accordion-label" for="item4">Sobre a loja</label>
+                    <div class="accordion-content">
+                        <img src="~/imagens/peamostrado.jpg" class="sobrelojaimgdesc" alt="logoboutique">
+                        <h5>Pé Amostrado</h5>
+                        <p>Pé Amostrado é uma loja eclética que celebra estilos vibrantes e histórias únicas, proporcionando uma experiência de moda diversificada e inspiradora.</p>
+                        <div class="botoes-seguir-itens">
+                            <button class="follow">+ Seguir</button>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
+
+    </div>
 
 </body>
 </html>

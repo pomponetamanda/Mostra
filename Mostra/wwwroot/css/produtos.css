@@ -7,6 +7,7 @@
     overflow: hidden;
 }
 
+/* */
 .product-details {
     display: flex;
     padding: 30px;
@@ -34,7 +35,7 @@ h1 {
 
 .price {
     font-size: 28px;
-    color: #e63946;
+    color: black;
     margin: 0 0 15px;
 }
 
@@ -126,9 +127,15 @@ select, input[type="number"] {
 }
 
 
-.detalhespt2{
+.detalhespt2 {
     display: flex;
-    right:300px;
-
+    right: 300px;
 }
 
+.vocegoste {
+    font-size: 24px;
+    margin-top: 32px;
+    display: flex;
+    right: -150px;
+    font-weight: lighter;
+}

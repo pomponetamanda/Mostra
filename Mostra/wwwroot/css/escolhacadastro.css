@@ -1,4 +1,8 @@
-﻿.container4 {
+﻿
+
+/*CONTEÚDO*/
+
+.container4 {
     margin: auto;
     padding: 60px;
     border-radius: 10px;
@@ -53,4 +57,13 @@
     transform: translateY(-10px);
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
 }
+
+/*RESPONSAVIDADE*/
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
 

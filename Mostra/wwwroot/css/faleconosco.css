@@ -44,3 +44,11 @@ textarea {
     width: 100%;
     border: solid 1px #c0c0c0;
 }
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

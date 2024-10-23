@@ -152,3 +152,11 @@ button {
     button:hover {
         background-color: #380c13;
     }
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

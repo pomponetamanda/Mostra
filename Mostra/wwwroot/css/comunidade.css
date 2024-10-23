@@ -1,4 +1,8 @@
-﻿.hero {
+﻿
+/*CONTEÚDO*/
+
+
+.hero {
     background-color: #f4f3e6;
     background-size: cover;
     background-position: center;
@@ -133,3 +137,12 @@ p {
         max-width: 700px;
         margin: 0 auto 30px auto;
     }
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
