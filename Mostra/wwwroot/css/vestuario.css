@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-/banner/
+/*banner*/
 
 h3 {
     font-size: 24px; /* Tamanho da fonte maior */
@@ -81,11 +81,15 @@ h3 {
     padding: 20px;
     background-color: #f9f9f9;
     gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .itens-marketplace {
-    display: flex;
     align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .item {
@@ -139,7 +143,7 @@ h3 {
     font-weight: normal; /* Define o peso da fonte como normal */
 }
 
-/LOJAS NOVAS/
+/*LOJAS NOVAS*/
 
 .container {
     text-align: center;

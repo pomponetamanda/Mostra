@@ -1,7 +1,6 @@
 ﻿
 /*CONTEÚDO*/
 
-
 .hero {
     background-color: #f4f3e6;
     background-size: cover;
@@ -11,7 +10,6 @@
 }
 
 .overlay {
-    background-color: rgba(0, 0, 0, 0.6);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -19,7 +17,7 @@
     align-items: center;
     text-align: center;
     padding: 0 20px;
-    color: #fff;
+    color: #5d0703;
 }
 
 h1 {
@@ -32,6 +30,7 @@ p {
     font-size: 1.2em;
     margin-bottom: 30px;
 }
+
 
 .cta-button {
     background-color: #5d0703;
