@@ -1,8 +1,8 @@
 ﻿namespace Mostra.Models
 {
-    public class mostra
+    public class clientes
     {
-        public int id { get; set; }
+        public int Id { get; set; }
 
         public string nome { get; set; }
         public string email { get; set; }

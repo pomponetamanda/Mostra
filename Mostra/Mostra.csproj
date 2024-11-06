@@ -22,10 +22,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\clientes.cs" />
+    <Compile Remove="Pages\Create.cshtml.cs" />
     <Compile Remove="Pages\produto2.cshtml.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\Create.cshtml" />
     <Content Remove="Pages\EdiatPerfilEmporesa.cshtml" />
     <Content Remove="Pages\HomeCliente.cshtml" />
     <Content Remove="Pages\Login.cshtml" />

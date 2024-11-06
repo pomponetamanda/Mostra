@@ -1,0 +1,36 @@
+create database mostra;
+use mostra;
+
+select * from clientes;
+
+CREATE TABLE clientes (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    cpf CHAR(11),
+    telefone VARCHAR(15),
+    endereco VARCHAR(255),
+    senha VARCHAR(255)            -- Armazenar o hash da senha
+);
+
+
+// SEGUNDOO
+
+
+create database mostra;
+use mostra;
+
+select * from clientes;
+
+CREATE TABLE clientes (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome varchar(100),
+    email varchar(50),
+    cpf int (11),
+    telefone int,
+    endereco varchar(100),
+    senha int            -- Armazenar o hash da senha
+);
+
+drop table clientes;
+

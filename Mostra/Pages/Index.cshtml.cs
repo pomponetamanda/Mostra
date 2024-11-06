@@ -14,10 +14,10 @@ public class IndexModel : PageModel
         _context = context;
     }
 
-    public IList<mostra> cadastro { get; set; }
+    public IList<mostra> clientes { get; set; }
     public async Task OnGetAsync()
     {
-        cadastro = await _context.cadastro.ToListAsync();
+        clientes = await _context.clientes.ToListAsync();
     }
 
     public async Task<IActionResult> OnPostAddAsync(mostra newmostra)
@@ -26,17 +26,17 @@ public class IndexModel : PageModel
         {
             return Page();
         }
-        _context.cadastro.Add(newmostra);
+        _context.clientes.Add(newmostra);
         await _context.SaveChangesAsync();
         return RedirectToPage();
     }
 
-    public async Task<IActionResult> OnPostDeleteAsync(int id)
+    public async Task<IActionResult> OnPostDeleteAsync(int Id)
     {
-        var mostra = await _context.cadastro.FindAsync(id);
+        var mostra = await _context.clientes.FindAsync(Id);
         if (mostra != null)
         {
-            _context.cadastro.Remove(mostra);
+            _context.clientes.Remove(mostra);
             await _context.SaveChangesAsync();
         }
         return RedirectToPage();

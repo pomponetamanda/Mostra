@@ -7,7 +7,7 @@ namespace Mostra.Models
         options) : base(options)
         {
         }
-        public DbSet<mostra> cadastro { get; set; }
+        public DbSet<mostra> clientes { get; set; }
         internal bool TestConnection()
         {
             throw new NotImplementedException();

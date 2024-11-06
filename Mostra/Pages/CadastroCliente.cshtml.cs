@@ -4,10 +4,10 @@ using Mostra.Models;
 
 namespace Mostra.Pages
 {
-    public class CreateModel : PageModel
+    public class CadastroClienteModel : PageModel
     {
         private readonly ApplicationDbContext _context;
-        public CreateModel(ApplicationDbContext context)
+        public CadastroClienteModel(ApplicationDbContext context)
         {
             _context = context;
         }
