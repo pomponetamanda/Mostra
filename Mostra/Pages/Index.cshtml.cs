@@ -31,9 +31,9 @@ public class IndexModel : PageModel
         return RedirectToPage();
     }
 
-    public async Task<IActionResult> OnPostDeleteAsync(int Id)
+    public async Task<IActionResult> OnPostDeleteAsync(int id)
     {
-        var mostra = await _context.clientes.FindAsync(Id);
+        var mostra = await _context.clientes.FindAsync(id);
         if (mostra != null)
         {
             _context.clientes.Remove(mostra);
