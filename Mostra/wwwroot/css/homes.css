@@ -1,4 +1,109 @@
-﻿
+﻿/* Estilos globais */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f4f3e6;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.full-width-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #5d0703; /* Cor de fundo */
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+    /* Logo */
+    .full-width-navbar a img {
+        height: 130px;
+        margin-left: 180px;
+    }
+
+/* Links de navegação */
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+        transition: color 0.3s;
+    }
+
+        .nav-links a:hover {
+            color: #ddd; /* Cor dos links ao passar o mouse */
+        }
+
+/* Barra de pesquisa */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+    .search-bar input[type="text"] {
+        border: none;
+        outline: none;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 1em;
+    }
+
+    .search-bar button {
+        background: none;
+        border: none;
+        color: #4CAF50;
+        cursor: pointer;
+        font-size: 1.2em;
+        padding: 0 10px;
+    }
+
+/* Botão de login */
+.botaoH {
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .botaoH:hover {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+/* Ajuste de responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .full-width-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links, .search-bar {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
 
 /*CONTEUDO*/
 
@@ -76,27 +181,27 @@
     border-bottom: 2px solid #ccc;
 }
 
-.historia .container1 {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-    .historia .container1 .coluna {
-        flex: 1 1 350px;
+    .historia .container1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
-        .historia .container1 .coluna p {
-            font-size: 20px;
+        .historia .container1 .coluna {
+            flex: 1 1 350px;
         }
 
-.historia img {
-    margin-left: 30px;
-    width: 80%;
-    display: block;
-}
+            .historia .container1 .coluna p {
+                font-size: 20px;
+            }
+
+    .historia img {
+        margin-left: 30px;
+        width: 80%;
+        display: block;
+    }
 
 
 /*OBJETIVO*/
@@ -144,6 +249,7 @@
 #carouselExampleDark {
     border-bottom: 2px solid #380c13;
     padding-bottom: 10px;
+    padding-top: 160px;
 }
 
 .carousel {
@@ -292,4 +398,3 @@
         flex-direction: column;
     }
 }
-

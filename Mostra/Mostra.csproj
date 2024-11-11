@@ -40,7 +40,10 @@
     <Content Remove="Pages\Shared\Navbar2.cshtml" />
     <Content Remove="Pages\Shared\Navbar3.cshtml" />
     <Content Remove="wwwroot\css\cadastrocliente.css" />
+    <Content Remove="wwwroot\css\escolhacadastro.css" />
     <Content Remove="wwwroot\css\login.css" />
+    <Content Remove="wwwroot\css\peamostrado.css" />
+    <Content Remove="wwwroot\css\quem.css" />
     <Content Remove="wwwroot\css\quemsomos.css" />
     <Content Remove="wwwroot\imagens\logo.png" />
   </ItemGroup>
