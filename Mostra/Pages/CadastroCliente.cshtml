@@ -10,30 +10,7 @@
     <link rel="stylesheet" href="/css/cadastroempresa.css" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light full-width-navbar">
-
-        <a href="/Index">
-            <img src="~/imagens/logo - Cópia.png" alt="Logo">
-        </a>
-
-        <div class="nav-links">
-            <a href="/Index">Home</a>
-            <a href="/Privacy">Comunidade</a>
-            <a href="/Lojas">Lojas</a>
-
-        </div>
-
-        <div class="search-bar">
-            <input type="text" placeholder="Insira sua busca">
-            <button><i class="fas fa-search"></i></button>
-        </div>
-
-
-
-        <a href="/Login1">
-            <button class="botaoH" type="button">Login</button>
-        </a>
-    </nav>
+   
     <h2>Cadastro de Cliente</h2>
     <form method="post">
         <label for="nome">Noma:</label>
@@ -58,5 +35,55 @@
     </form>
 
 </body>
+<style>
 
+
+    h1 {
+        color: #031375;
+        text-align: center;
+    }
+
+    form {
+        background-color: #ffffff;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        padding: 20px;
+        max-width: 400px;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        color: #5d0703;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #5d0703;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+        button:hover {
+            background-color: #5d0703;
+        }
+
+
+</style>
 </html>

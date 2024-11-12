@@ -76,7 +76,7 @@ body, html {
 /* Botão de login */
 .botaoH {
     background-color: white;
-    color: #4CAF50;
+    color: #fc703c;
     border: 2px solid white;
     padding: 8px 20px;
     border-radius: 20px;
@@ -86,7 +86,7 @@ body, html {
 }
 
     .botaoH:hover {
-        background-color: #4CAF50;
+        background-color: #fc703c;
         color: white;
     }
 
@@ -118,7 +118,7 @@ body, html {
 
 h2 {
     margin-bottom: 20px;
-    color: #333;
+    color: #5d0703;
     text-align: center;
 }
 
@@ -144,7 +144,7 @@ h2 {
 label {
     margin-bottom: 5px;
     font-size: 14px;
-    color: #333;
+    color: #5d0703;
 }
 
 input, select {

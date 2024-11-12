@@ -76,7 +76,7 @@ body, html {
 /* Botão de login */
 .botaoH {
     background-color: white;
-    color: #4CAF50;
+    color: #fc703c;
     border: 2px solid white;
     padding: 8px 20px;
     border-radius: 20px;
@@ -86,7 +86,7 @@ body, html {
 }
 
     .botaoH:hover {
-        background-color: #4CAF50;
+        background-color: #fc703c;
         color: white;
     }
 
@@ -105,117 +105,119 @@ body, html {
 }
 
 
+/* Estilização para deixar o formulário mais moderno e atrativo */
 .container8 {
-    background-color: #ffffff;
-    margin: auto;
+    max-width: 400px;
+    margin: 50px auto;
     padding: 60px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin-top: 80px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
     text-align: center;
-    max-width: 900px;
-    max-height: 1000px;
-    height: 600px;
-    display: block;
-    margin-top: 200px;
+    font-family: Arial, sans-serif;
+    /*margin-top: 200px;*/
 }
 
-h1 {
-    margin-bottom: 20px;
-    color: #5d0703;
-}
-
-.input-group {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #5d0703;
-}
-
-input {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid #5d0703;
-    border-radius: 8px;
-    transition: border-color 0.3s;
-}
-
-    input:focus {
-        border-color: #004d40;
-        outline: none;
+    .container8 h1 {
+        color: #5d0703;
+        margin-bottom: 20px;
+        font-size: 24px;
     }
 
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+    .input-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #555;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 14px;
+        transition: border-color 0.3s;
+    }
+
+        .input-group input:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
 .btn {
-    width: 100%;
-    padding: 12px;
     background-color: #5d0703;
-    color: white;
+    color: #ffffff;
     border: none;
+    padding: 10px 20px;
     border-radius: 8px;
+    font-size: 16px;
     cursor: pointer;
+    width: 100%;
     transition: background-color 0.3s;
 }
 
     .btn:hover {
-        background-color: #004d40;
+        background-color: #b03528;
     }
 
 .separator {
-    margin: 20px 0;
+    margin: 5px 0;
     position: relative;
+    text-align: center;
 }
 
     .separator span {
-        background-color: #fff;
+        background-color: #ffffff;
         padding: 0 10px;
-        position: absolute;
-        top: -10px;
-        left: 50%;
-        transform: translateX(-50%);
-        color: #8b0e07;
+        color: #777;
+        font-size: 14px;
     }
 
     .separator::before {
-        content: '';
-        display: block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
         height: 1px;
-        background-color: #5d0703;
-        margin: 10px 0;
+        background-color: #ccc;
+        z-index: -1;
     }
 
-.social-login {
-    margin-bottom: 20px;
-}
-
-.btn-google {
-    padding: 12px;
-    background-color: #5d0703;
-    color: white;
+.social-login .btn-google {
+    background-color: #007BFF;
+    color: #ffffff;
     border: none;
+    padding: 10px 20px;
     border-radius: 8px;
+    font-size: 16px;
     cursor: pointer;
     width: 100%;
+    margin-bottom: 10px;
     transition: background-color 0.3s;
 }
 
-    .btn-google:hover {
-        background-color: #c13525;
+    .social-login .btn-google:hover {
+        background-color: #b03528;
     }
 
-.register-link {
-    color: #5d0703;
+.register-link p {
+    color: #555;
+    font-size: 14px;
 }
 
-    .register-link a {
-        color: #8b0e07;
-        text-decoration: none;
-        font-weight: bold;
-    }
+.register-link a {
+    color: #5d0703;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        .register-link a:hover {
-            text-decoration: underline;
-        }
+    .register-link a:hover {
+        text-decoration: underline;
+    }
